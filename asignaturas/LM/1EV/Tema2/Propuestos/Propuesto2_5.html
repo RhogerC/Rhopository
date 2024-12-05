@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Alta</title>
+
+    <style>
+        #user{
+            text-align: center;
+        }
+        table{
+            border: 3px black solid;
+        }
+        #reseteo{
+            margin-left: 35%;
+        }
+        #envio{
+            margin-left: 40%;
+        }
+        #modifica{
+            text-align: center;
+        }
+        td{
+            border: 3px black solid;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulario de alta de usuario</h1>
+    <form action="">
+        <table>
+            <tr>
+                <td colspan="2"id="user">
+                    <label for="username">Identificador de nuevo usuario</label>
+                    <input type="text" name="username" id="username" value="usu_012345" readonly >
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="nombre">Nombre </label><input type="text" name="name" id="nombre" >
+                </td>
+                <td>
+                    <label for="apellido">Apellido</label> 
+                    <input type="text" name="surname" id="apellido">
+                </td>
+            </tr>
+            <tr>
+                
+                <td>
+                    <label for="contraseña">Contraseña</label> 
+                    <input type="password" name="password" id="contraseña">
+                </td>
+                <td>
+                    <label for="contraseña1">Contraseña</label>
+                    <input type="password" name="password1" id="contrseña1">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label for="correo">Email</label>
+                    <input type="email" name="email" id="correo" size="41">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Sexo
+                </td>
+                <td>
+                    <input type="radio" name="sexo" id="v">
+                        <label for="">Varon</label>
+
+                        <input type="radio" name="sexo" checked id="m">
+                        <label for="m">Mujer</label>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Aficiones
+                </td>
+                <td>
+                    <input type="checkbox" name="aficion" id="deporte">
+                        <label for="deporte">Deporte</label>
+                        <br>
+                        <input type="checkbox" name="aficion" id="lectura" checked>
+                        <label for="lectura">Lectura</label>
+                        <br>
+                        <input type="checkbox" name="aficion" id="cine">
+                        <label for="cine">Cine</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Pais
+                </td>
+                <td>
+                    <select name="pais" id="pais">
+                            <option value="españa">España</option>
+                            <option value="francia" selected>Francia</option>
+                            <option value="portugal">Portugal</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Colores favoritos
+                </td>
+                <td>
+                    <select name="colores" id="colores" multiple>
+                            <option value="rojo" selected>Rojo</option>
+                            <option value="verde">Verde</option>
+                            <option value="azul" selected>Azul</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Subir su foto
+                </td>
+                <td>
+                    <input type="file" name="foto" id="foto">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Comentarios personales
+                </td>
+                <td>
+                    
+                    <textarea name="comentario" id="comentario" placeholder="Escriba aqui sus comentarios" cols="40" rows="5"></textarea>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="reset" value="Resetear" id="reseteo">
+                </td>
+                <td>
+                    <input type="submit" name="Enviar" id="envio">
+                    
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" id="modifica">
+                     <input type="button" value="Modificar datos del usuario" disabled>
+                    
+                </td>
+            </tr>
+
+        </table>
+        
+        
+        
+    </form>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desplegable Rho</title>
+    <link rel="stylesheet" href="desplegable.css">
+</head>
+<body>
+    
+    <header>
+        <!--Cremoa un div para el titlo y poder aplicarle estilos solo a este mediante su id-->
+        <div id="titulo">
+            <h1>Menu Desplegable</h1>
+
+        </div>
+
+        <!--Creamos la etiqueta nav para indicar al navegador que es un menu-->
+        <nav>
+
+            <!--Creamos la lista de las secciones con una clase llamada igual para aplicar estilos en grupo-->
+            <ul id="secciones">
+
+                <!--Creamos un id para inicio, dado que no tiene queremos aplicarle los mismos estilos que a las ciclos-->
+                <li id="inicio">
+                    Inicio 
+                </li>
+
+                <!--Creamos la clase ciclo para aplicarle estilos en grupo y porque usamos uppercase para estos en el css-->
+                <li class="ciclo">
+                    Asir
+
+                    <!--Creamos una clase desplegable para la lista interior-->
+                    <ul class="desplegable">
+
+                        <!--Creamos una clase asignatura para estas-->
+                        <li class="asignatura">
+
+                            <!--Insetamos un enlace "a" para que se le pueda añadir la ruta a posteriori-->
+                            <a href="">Bases de datos</a> 
+                        </li>
+                        <li class="asignatura">
+                            <a href="">Sistemas operativos</a> 
+                        </li>
+                        <li class="asignatura">
+                            <a href="">Lenguaje de marcas</a>
+                        </li>
+                    </ul>
+
+                </li>
+
+                <li class="ciclo">
+                    Dam
+                    <ul class="desplegable">
+                        <li class="asignatura">
+                            <a href="">Bases de datos</a> 
+                        </li>
+                        <li class="asignatura">
+                            <a href="">Sistemas operativos</a> 
+                        </li>
+                        <li class="asignatura">
+                            <a href="">Lenguaje de marcas</a>
+                        </li>
+                    </ul>
+                    
+                </li>
+
+                <li class="ciclo">
+                    Daw
+                    <ul class="desplegable">
+                        <li class="asignatura">
+                            <a href="">Bases de datos</a> 
+                        </li>
+                        <li class="asignatura">
+                            <a href="">Sistemas operativos</a> 
+                        </li>
+                        <li class="asignatura">
+                            <a href="">Lenguaje de marcas</a>
+                        </li>
+                    </ul>
+                    
+                </li>
+
+                <li class="ciclo">
+                    Smr
+                    <ul class="desplegable">
+                        <li class="asignatura">
+                            <a href="">Bases de datos</a> 
+                        </li>
+                        <li class="asignatura">
+                            <a href="">Sistemas operativos</a> 
+                        </li>
+                        <li class="asignatura">
+                            <a href="">Lenguaje de marcas</a>
+                        </li>
+                    </ul>
+                    
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    
+</body>
+</html>

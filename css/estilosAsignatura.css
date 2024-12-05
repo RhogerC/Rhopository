@@ -1,0 +1,292 @@
+/* Reset básico */
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Contenedor principal */
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Estilo general para el header */
+header {
+    display: flex; /* Usamos Flexbox para dividir el espacio */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos */
+    align-items: center; /* Alinea verticalmente los elementos al centro */
+    padding: 10px 10px; /* Espaciado alrededor del header */
+    background-color: rgb(7, 7, 7); /* Fondo oscuro (puedes cambiarlo según el diseño) */
+    color: white; /* Color de texto */
+}
+
+/* Contenedor interno para el header */
+header .container {
+    display: flex; /* Distribuye los elementos dentro del contenedor */
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+    align-items: center; /* Centra verticalmente los elementos dentro del contenedor */
+}
+
+/* Estilo del logo */
+header .logo img {
+    width: 80px; /* Ajusta el tamaño del logo */
+    height: auto;
+}
+
+/* Estilo del título */
+header .title {
+    flex-grow: 1; /* Hace que el título ocupe el espacio restante entre el logo y la navegación */
+    text-align: center; /* Centra el texto */
+}
+
+/* Estilo del menú de navegación */
+nav {
+    display: flex; /* Usa Flexbox para los elementos del menú */
+}
+
+nav ul {
+    list-style: none; /* Elimina los puntos de lista */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Los elementos del menú estarán en una línea */
+}
+
+nav ul li {
+    margin: 0 15px; /* Espaciado entre los elementos del menú */
+}
+
+nav ul li a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: white; /* Color de los enlaces */
+    font-size: 16px; /* Tamaño de la fuente */
+}
+
+nav ul li a:hover {
+    color: #ff6347; /* Color al pasar el mouse sobre los enlaces */
+}
+
+
+
+/* Menú desplegable debajo del header */
+.dropdown-menu {
+    background-color: #043e6dd0;
+    color: white;
+    padding: 10px 20px;
+    position: relative;
+    display: flex;
+    justify-content: left;
+}
+
+.dropdown-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.dropdown-menu ul li {
+    position: relative;
+}
+
+.dropdown-menu ul li ul {
+    position: flex;
+    display: none;
+}
+
+.dropdown-menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 5px 10px;
+}
+
+.dropdown-menu ul li:hover > .submenu {
+    display: block;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%; /* Justo debajo del enlace principal */
+    left: 0;
+    background-color: #444;
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.submenu li {
+    margin: 0;
+    padding: 0;
+}
+
+.submenu li a {
+    display: block;
+    padding: 5px 15px;
+    color: white;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.submenu li a:hover {
+    background-color: #555;
+    color: #ff6347;
+}
+/* Contenido */
+#content {
+    display:flex;
+    justify-content:space-between;
+    margin-top: 20px;
+}
+
+/*Estilo titulo de asignatua*/
+main h2{
+    padding-left: 1.2em;
+    padding-top: 15px;
+}
+
+/*Columna izquierda */
+#central-block {
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+#central-block h2 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #333;
+
+}
+
+#central-block article {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+#central-block article h3 {
+    margin: 0 0 5px 0;
+    font-size: 1.2em;
+}
+
+#central-block article p {
+    margin: 0;
+    color: #666;
+    font-size: 0.9em;
+}
+
+
+/*Estiilos dentro del central block*/
+#central-block .evaluacion{
+    padding: 30px;
+    font-size: large;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+}
+
+#central-block .evaluacion a{
+    font-size: large;
+    font-weight: bold;
+    color: #000000;
+    text-decoration: none;
+}
+
+#central-block .evaluacion:hover{
+    background-color: rgba(87, 194, 226, 0.726);
+}
+
+#central-block .evaluacion a:hover{
+    color: rgb(255, 255, 255);
+    text-shadow:2px 2px 2px black;
+    padding: 4px 8px;
+}
+
+
+/* Columna derecha - Aside */
+aside {
+    width: 25%;
+    padding-left: 20px;
+}
+
+.widget {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.widget h3 {
+    color: #333;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer h2 {
+    margin-bottom: 15px;
+}
+
+footer ul {
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    #content {
+        flex-direction: column;
+    }
+
+    #asignaturas, article, aside {
+        width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    nav {
+        float: none;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema2 Propuesto1</title>
+
+    <style>
+        html{
+            border: black 5px solid;
+            margin: 5px;
+            padding-top: -300px;
+        }
+
+        body{
+            padding-top: 0;
+            margin-top: 0;
+        }
+        h1{
+            text-align: center;
+            padding-top: 0;
+            margin-top:0;
+            height: 100%;
+        }
+
+        #textoSangria{
+            text-indent: 2em;
+            text-justify: auto;
+        }
+        h3{
+            text-align: right;
+        }
+        pre{
+            float: left;
+        }
+        img{
+            height: 110px;
+            width: 110px;
+            border: black 3px solid;
+            float: right;
+            position;
+        }
+
+    </style>
+</head>
+<body>
+        
+            <h1><u>Programación orientada a objetos</u></h1>
+        
+            <p id="textoSangria">La <b>Programacion Orientada a Objetos</b> (POO, en ingles OOP, <i>Object Oriented Programming</i>) es un <tt><u>paradigma de programacion</u></tt> que pretende desarrollar aplicaciones basandose en el comportamiento de los objetos del mundo real. </p>
+        
+        
+            <h3>Conceptos fundamentales</h3>
+        
+        
+            <ul>
+                <li>
+                    <dt> <b>Clase:</b> modelo, molde o patron a partir del cual se crearan instancias concretas (objetos). Al crease se definiran su nombre, sus atributos, sus modelos y si es construida a partir de otra clase ya existente (<i>herencia</i>.</dt> 
+                </li>
+                <li>
+                    <dt><b>Objeto:</b> instancia concreta de una clase. Tendra un estado concreto y ocupara un espacio en memoria.</dt> 
+                </li>
+                <li>
+                    <dt><b>Atributo:</b> carateristica de un objeto (o clase). Los atributos de un objeto se definen al construir la clase de la que luego se instaciara el objeto. Tambien se denomina en ocasiones <i>propiedad</i>.</dt>
+                </li>
+                <li>
+                    <dt><b>Metodo:</b> funcionalidad asociada a un objeto (o clase) y que se definen al construir la clase de la que luego se instanciara el objeto.</dt> 
+                </li>                
+            </ul>
+        
+        
+            <h3>Java: un ejemplo</h3>
+        
+            <p id="textoSangria">El lenguaje de programacion <u>Java</u> es un exponente de la programacion orientada a objetos. Un pequeño ejemplo de un codigo en Java seria:</p>
+        <pre>
+            public class Circulo { 
+                Punto centro;
+                int radio;
+                Circulo(Punto centro, int radio) {
+                    this.centro= centro;
+                    this.radio= radio;
+                }
+            }
+        </pre>
+        <br><br>
+        <img src="imagenes/java.svg" alt="logo java">
+</body>
+</html>

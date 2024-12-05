@@ -1,0 +1,41 @@
+#curriculum_vitae{
+    margin: 0 auto;
+
+}
+
+#curriculum_vitae h1{
+    text-align: center;
+    text-transform:uppercase;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#foto img{
+    width: 14%;
+    height: 140px;
+    float: right;
+}
+
+.titulo{
+    font-weight: bold ;
+}
+
+#datos_personales ul{
+    list-style: none;
+}
+
+.seccion{
+    border-bottom: 1px black solid;
+    margin-bottom: 2em; 
+}
+
+.lugar{
+    list-style: none;
+}
+
+.periodo{
+    list-style: none;
+}
+
+.nivel{
+    list-style: none;
+}

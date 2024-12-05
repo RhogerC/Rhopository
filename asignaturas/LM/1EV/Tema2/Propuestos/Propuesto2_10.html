@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema2 Propuesto10</title>
+</head>
+<body>
+    <h1>Ejercicio multimedia</h1>
+    <video src="video/oso.mp4" autoplay="true"></video>
+    <object data="swf/lemniscata.swf" type="application/x-shockwave-flash"></object>
+    <!--Dado que desde 2020 no hay soporte para flash en los navegadores,
+    incluyo una captura de video del .swf ejecutado en Ruffle-demo-->
+    <video src="video/lemniscata.mp4" autoplay width="400px"></video>
+    <br>
+    <audio src="audio/risa.wav" autoplay="true" controls=""></audio>
+    <!--El audio .wav no puede reproducirse en el navegador, asi que incluimos una
+    version .mp3 para comprobar que funciona-->
+    <audio src="audio/risa.mp3" autoplay controls></audio>
+    <iframe src="imagenes/aviso.jpg" frameborder="0"></iframe>
+
+</body>
+</html>
