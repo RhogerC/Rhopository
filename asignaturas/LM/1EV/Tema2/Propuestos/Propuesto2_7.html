@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Índice de Contenidos</title>
+</head>
+<body>
+    <!--Agregamos el id para los enlaces que llevan al principio del documento-->
+    <h1 id="inicio">Índice de Contenidos</h1>
+    <ol>
+        <li><a href="#seccion1">Introducción a la CPU</a></li>
+        <li><a href="#seccion2">Historia</a></li>
+        <li><a href="#seccion3">CPU de transistores y circuitos integrados</a></li>
+        <li><a href="#seccion4">Microprocesadores</a></li>
+        <li><a href="#seccion5">Funcionamiento</a></li>
+        <li><a href="#seccion6">Diseño e implementacion</a></li>
+        <li><a href="#seccion7">Frecuencia de reloj</a></li>
+    </ol>
+
+    <hr>
+
+    <h2 id="seccion1">Introducción a la CPU</h2>
+    <p>
+        La unidad central de procesamiento (conocida por las siglas CPU, del inglés Central Processing Unit) o procesador es un componente del hardware dentro de un ordenador, teléfonos inteligentes, y otros dispositivos programables.
+    </p>
+    <p>
+        Su función es interpretar las instrucciones de un programa informático mediante la realización de las operaciones básicas aritméticas, lógicas, y externas (procedentes de la unidad de entrada/salida). Su diseño y su avance ha variado notablemente desde su creación, aumentando su eficiencia y potencia y reduciendo el consumo de energía y el coste.
+    </p>
+    <p>
+        Un ordenador puede contener más de una CPU (multiprocesamiento). En la actualidad, los microprocesadores están constituidos por un único circuito integrado (chip) aunque existen los procesadores multinúcleo (varias CPU en un solo circuito integrado). Un circuito integrado que contiene una CPU también puede contener los dispositivos periféricos y otros componentes de un sistema informático; similar a un microcontrolador (menos potente en RAM) se le denomina sistema en un chip (SoC).
+    </p>
+    <p>
+        Los componentes de la CPU son:
+        <ul>
+            <li>
+                Unidad aritmético lógica o unidad de cálculo (del inglés: Arithmetic Logic Unit o ALU): realiza operaciones aritméticas y lógicas. 
+            </li>
+            <li>
+                Unidad de control (CU): dirige el tráfico de información entre los registros de la CPU y conecta con la ALU las instrucciones extraídas de la memoria.
+            </li>
+            <li>
+                Registros internos: no accesibles (de instrucción, de bus de datos y bus de dirección) y accesibles de uso específico (contador programa, puntero pila, acumulador, flags, etc.) o de uso general.
+            </li>
+        </ul>
+    </p>
+    <a href="#inicio">Volver al principio</a>
+
+    <hr>
+
+    <h2 id="seccion2">Historia</h2>
+    <p>
+        Los primeros ordenadores, como el ENIAC, tenían que recablearse físicamente para realizar diferentes tareas, lo que hizo que estas máquinas se denominaran "ordenadores de programa fijo". Dado que el término "CPU" generalmente se define como un dispositivo para la ejecución de software (programa informático), los primeros dispositivos que con razón podríamos llamar CPU vinieron con el advenimiento de la ordenador de programa almacenado.
+    </p>
+    <p>
+        La idea de un ordenador con programa almacenado ya estaba presente en el diseño de John Presper Eckert y en el ENIAC de John William Mauchly, pero esta característica se omitió inicialmente para que el aparato pudiera estar listo antes. El 30 de junio de 1945, antes de que se construyera la ENIAC, el matemático John von Neumann distribuyó el trabajo titulado First Draft of a Report on the EDVAC (Primer Borrador de un Informe sobre el EDVAC). Fue el esbozo de un ordenador de programa almacenado, que se terminó en agosto de 1949.2​ El EDVAC se diseñó para realizar un cierto número de instrucciones (u operaciones) de varios tipos. Significativamente, los programas escritos para el EDVAC se crearon para almacenarse en la memoria de alta velocidad del ordenador y no para que los especificara su cableado físico. Esto permitió superar una grave limitación del ENIAC, que era el tiempo y el esfuerzo necesarios para volver a configurar el equipo para realizar una nueva tarea. Con el diseño de von Neumann, el programa (o software) que corría en el EDVAC podría cambiarse simplemente cambiando el contenido de la memoria. Sin embargo, el EDVAC no fue el primer ordenador de programa almacenado: la Máquina Experimental de Pequeña Escala de Mánchester, un pequeño prototipo de ordenador de programa almacenado, ejecutó su primer programa el 21 de junio de 1948.3​ Su sucesor, el Manchester Mark I, ejecutó su primer programa en la noche del 16 al 17 de junio de 1949
+    </p>
+    <p>
+        Las primeras CPU se diseñaron a medida como parte de un ordenador más grande, generalmente un ordenador único en su especie. Sin embargo, este método de diseñar las CPU a medida, para una aplicación particular, ha desaparecido en gran parte y se ha sustituido por el desarrollo de clases de procesadores baratos y estandarizados adaptados para uno o varios propósitos. Esta tendencia de estandarización comenzó generalmente en la era de los transistores discretos, los ordenador centrales, y los microprocesadoress y se aceleró rápidamente con la popularización del circuito integrado (IC). Este ha permitido que se diseñen y se fabriquen CPU más complejas en espacios pequeños, del orden de nanómetros. Por la miniaturización y la estandarización de las CPU, ha aumentado la presencia de estos dispositivos digitales en la vida moderna mucho más allá de las aplicaciones limitadas de máquinas de computación dedicadas. Los microprocesadores modernos aparecen en todo, desde automóviles hasta teléfonos móviles (celulares) y juguetes de niños.
+    </p>
+    <p>
+        Si bien von Neumann ha sido muchas veces acreditado por el diseño del ordenador con programa almacenado debido a su diseño del EDVAC, otros antes que él, como Konrad Zuse, habían propuesto y aplicado ideas similares. La denominada arquitectura Harvard del Harvard Mark I, que se completó antes de EDVAC, también utilizó un diseño de programa almacenado usando cinta de papel perforada en vez de memoria electrónica. La diferencia clave entre las arquitecturas de von Neumann y la de Harvard es que la última separa, dentro del almacenamiento, el tratamiento de instrucciones de la CPU y los datos, mientras que el primero utiliza el mismo espacio de memoria para ambos. La mayoría de los CPU modernos son de diseño von Neumann, pero las CPU con arquitectura Harvard se ven, sobre todo, en aplicaciones embebidas; por ejemplo, los microcontroladores Atmel AVR son procesadores de arquitectura Harvard.
+    </p>
+    <p>
+        Los relés eléctricos y los tubos de vacío (válvulas termoiónicas) se usaban comúnmente como elementos de conmutación; un ordenador útil requería miles o decenas de miles de dispositivos de conmutación. La velocidad global de un sistema depende de la velocidad de los conmutadores. Los ordenadores de tubo, como el EDVAC, solían tener un promedio de ocho horas entre fallos, mientras que los ordenadores de relés (anteriores y más lentos), como el Harvard Mark I, fallaban muy raramente.4​ Al final, las CPU basadas en tubo llegaron a ser dominantes porque las significativas ventajas de velocidad producidas generalmente pesaban más que los problemas de fiabilidad. La mayor parte de estas tempranas CPU síncronas corrían en frecuencias de reloj bajas comparadas con los modernos diseños microelectrónicos. Eran muy comunes en este tiempo las frecuencias de la señal del reloj con un rango desde 100 kHz hasta 4 MHz, limitado en gran parte por la velocidad de los dispositivos de conmutación con los que se construyeron.
+    </p>
+    <a href="#inicio">Volver al principio</a>
+
+    <hr>
+
+    <h2 id="seccion3">CPU de transistores y circuitos integrados</h2>
+    <p>
+        La complejidad del diseño de las CPU aumentó junto con la facilidad de la construcción de dispositivos electrónicos más pequeños y fiables. La primera de esas mejoras vino con el advenimiento del transistor. Las CPU transistorizadas durante los años 1950 y los años 1960 no tuvieron que construirse con elementos de conmutación abultados, no fiables y frágiles, como los tubos de vacío y los relés eléctricos. Con esta mejora, se construyeron CPU más complejas y más fiables sobre una o varias tarjetas de circuito impreso que contenían componentes discretos (individuales).
+    </p>
+    <p>
+        Durante este período, ganó popularidad un método de fabricar muchos transistores en un espacio reducido. El circuito integrado (IC) permitió fabricar una gran cantidad de transistores en una simple oblea basada en semiconductor o «chip». Al principio, solamente se miniaturizaron en IC circuitos digitales muy básicos, no especializados, como las puertas NOR. Las CPU basadas en estos IC de "bloques de construcción" generalmente denominan dispositivos de pequeña escala de integración "small-scale integration" (SSI). Normalmente los circuitos integrados SSI, como los usados en el computador guía del Apolo (Apollo Guidance Computer), contenían transistores que se contaban en números de múltiplos de diez. Construir una CPU completa usando IC SSI requería miles de chips individuales, pero aún consumía mucho menos espacio y energía que los diseños anteriores de transistores discretos. A medida que la tecnología microelectrónica avanzó, en los circuitos integrados se fue colocando un número creciente de transistores, disminuyendo así la cantidad de circuitos integrados individuales necesarios para una CPU completa. Los circuitos integrados MSI y LSI (de mediana y gran escala de integración) aumentaron el número de transistores a cientos y luego a miles.
+    </p>
+    <p>
+        En 1964, IBM introdujo su arquitectura de computador System/360, que se usó en una serie de ordenadores que podían ejecutar los mismos programas con velocidades y desempeños diferentes. Esto fue significativo en un tiempo en el que la mayoría de los ordenadores electrónicos eran incompatibles entre sí, incluso los hechas por un mismo fabricante. Para facilitar esta mejora, IBM utilizó el concepto de microprograma, a menudo llamado «microcódigo», ampliamente usado aún en las CPU modernas.5​ La arquitectura System/360 era tan popular que dominó el mercado del mainframe durante las siguientes décadas y dejó una herencia que todavía perdura en los ordenadores modernos, como el IBM zSeries. En el mismo año 1964, Digital Equipment Corporation (DEC) introdujo otro ordenador que fue muy influyente, dirigido a los mercados científicos y de investigación: el PDP-8. DEC introdujo más adelante la muy popular línea del PDP-11, que originalmente se construyó con IC SSI pero se implementó con componentes LSI cuando se convirtieron en prácticos. En fuerte contraste con sus precursores hechos con tecnologías SSI y MSI, la primera implementación LSI del PDP-11 contenía una CPU compuesta solamente por cuatro circuitos integrados LSI.6​
+    </p>
+    <p>
+        Los ordenadores basados en transistores tenían varias ventajas frente a sus predecesores. Aparte de una creciente fiabilidad y un menor consumo de energía, los transistores también permitían que la CPU operara a velocidades mucho más altas debido al corto tiempo de conmutación de un transistor en comparación con un tubo o un relé. Gracias tanto a esta creciente fiabilidad como al enorme incremento de velocidad de los elementos de conmutación, que por este tiempo eran casi exclusivamente transistores, se fueron alcanzando frecuencias de reloj de la CPU de decenas de megahercios. Además, mientras se usaban comúnmente las CPU de transistores discretos y de circuitos integrados, comenzaron a aparecer nuevos diseños de alto rendimiento, como procesadores vectoriales SIMD (single instruction multiple data – instrucción única, datos múltiples). Estos primeros diseños experimentales dieron lugar más adelante a la era de los superordenadores especializados, como los hechos por la Cray Inc.
+    </p>
+    <a href="#inicio">Volver al principio</a>
+
+    <hr>
+    
+    <h2 id="seccion4">Microprocesadores</h2>
+    <p>
+        En la década de 1970 los inventos fundamentales de Federico Faggin (ICs Silicon Gate MOS con puertas autoalineadas junto con su nueva metodología de diseño de lógica aleatoria) cambió el diseño y la implementación de las CPU para siempre. Desde la introducción del primer microprocesador comercialmente disponible, el Intel 4004, en 1970 y del primer microprocesador ampliamente usado, el Intel 8080, en 1974 esta clase de CPU ha desplazado casi totalmente el resto de los métodos de implementación de la Unidad Central de Procesamiento. Los fabricantes de mainframes y de miniordenadores de ese tiempo lanzaron programas de desarrollo de IC propietarios para actualizar sus arquitecturas de ordenadores más viejas y producir microprocesadores con conjuntos de instrucciones que eran retrocompatibles con sus hardwares y sus softwares más viejos. Combinado con el advenimiento y el vasto éxito del ahora ubicuo ordenador personal, el término "CPU" se aplica ahora casi exclusivamente a los microprocesadores.
+    </p>
+    <p>
+        Las generaciones previas de CPU se implementaron como componentes discretos y numerosos circuitos integrados de pequeña escala de integración en una o más tarjetas de circuitos. Por otro lado, los microprocesadores son CPU fabricadas con un número muy pequeño de IC; normalmente solo uno. El tamaño más pequeño de la CPU, como resultado de estar implementado en una simple pastilla, significa tiempos de conmutación más pequeños debido a factores físicos como la reducción de la capacitancia parásita de las puertas. Esto ha permitido que los microprocesadores síncronos tengan tiempos de reloj con un rango de decenas de megahercios a varios gigahercios. Adicionalmente, como ha aumentado la capacidad de construir transistores muy pequeños en un circuito integrado, la complejidad y el número de transistores en una simple CPU también se ha incrementado enormemente. Esta tendencia ampliamente observada se describe por la ley de Moore, que ha venido demostrando ser una predicción bastante exacta del crecimiento de la complejidad de los CPUs y otros IC.7​ Mientras que, en los pasados sesenta años, la complejidad, el tamaño, la construcción y la forma general de las CPUs han cambiado drásticamente, es notable que el diseño y el funcionamiento básico no ha cambiado demasiado. Casi todas las CPU comunes de hoy en día se pueden describir con precisión como máquinas de programa almacenado de von Neumann. A medida que la ya mencionada ley del Moore continúa cumpliéndose,7​ se han presentado preocupaciones sobre los límites de la tecnología de transistor del circuito integrado. La miniaturización extrema de puertas electrónicas está causando los efectos de fenómenos que se vuelven mucho más significativos, como la electromigración y el subumbral de pérdida. Estas nuevas preocupaciones están entre los muchos factores que hacen a los investigadores estudiar nuevos métodos de computación, como la computación cuántica, y ampliar el uso del paralelismo y de otros métodos que extienden la utilidad del modelo clásico de von Neumann.
+    </p>
+    <a href="#inicio">Volver al principio</a>
+
+    <hr>
+
+    <h2 id="seccion5">Funcionamiento</h2>
+    <p>
+        La función fundamental de la mayoría de las CPU es ejecutar una secuencia de instrucciones almacenadas llamadas «programa». El programa está representado por una serie de números que se mantienen en una cierta clase de memoria de ordenador. Hay cuatro pasos que casi todas las CPU de arquitectura de von Neumann usan en su operación: fetch, decode, execute, y writeback, (leer, decodificar, ejecutar y escribir).
+    </p>
+    <br>
+    <h4>Fetch</h4>
+    <p>
+        El primer paso, leer, implica recuperar una instrucción (que está representada por un número o una secuencia de números) de la memoria de programa. La localización en la memoria del programa queda determinada por un contador de programa (PC), que almacena un número que identifica la dirección de la siguiente instrucción que se debe buscar. Después de que se lee una instrucción, el PC se incrementa en la longitud de la instrucción en términos de unidades de memoria, de modo que contendrá la dirección de la siguiente instrucción en la secuencia. Frecuentemente, la instrucción a leerse debe recuperarse de la memoria, relativamente lenta, lo cual detiene la CPU mientras espera a que se devuelva la instrucción. Este problema se trata en gran medida en los procesadores modernos por los cachés y las arquitecturas pipeline (ver abajo).
+    </p>
+    <br>
+    <h4>Decode</h4>
+    <p>
+        En el paso de decodificación, la instrucción se divide en partes que tienen significado para otras unidades de la CPU. La manera en que el valor de la instrucción numérica se interpreta está definida por la arquitectura del conjunto de instrucciones (el ISA) de la CPU. A menudo, un grupo de números en la instrucción, llamados opcode, indica qué operación realizar. Las partes restantes del número normalmente proporcionan información requerida para esa instrucción como, por ejemplo, los operandos para una operación de adición. Tales operandos se pueden dar como un valor constante (llamado valor inmediato) o como un lugar para localizar un valor, que, según lo determinado por algún modo de dirección, puede ser un registro o una dirección de memoria. En diseños más viejos las unidades del CPU responsables de decodificar la instrucción eran dispositivos de hardware fijos. Sin embargo, en CPUs e ISAs más abstractos y complicados, frecuentemente se usa un microprograma para ayudar a traducir instrucciones en varias señales de configuración para la CPU. Este microprograma a veces se puede reescribir de tal manera que puede modificarse para cambiar la manera en que la CPU decodifica instrucciones incluso después de que se haya 
+    </p>
+    <br>
+    <h4>Execute</h4>
+    <p>
+        Después de los pasos de lectura y decodificación, se lleva a cabo el paso de la ejecución de la instrucción. Durante este paso, varias unidades de la CPU se conectan de tal manera que pueden realizar la operación deseada. Si, por ejemplo, se solicitó una operación de adición, una unidad aritmético lógica (ALU) se conectará a un conjunto de entradas y un conjunto de salidas. Las entradas proporcionan los números a ser sumados, y las salidas contendrán la suma final. La ALU contiene la circuitería para realizar operaciones simples de aritmética y de lógica en las entradas, como adición y operaciones de bits (bitwise). Si la operación de adición produce un resultado demasiado grande para poder que pueda manejarlo la CPU, también puede ajustarse una bandera (flag) de desbordamiento aritmético localizada en un registro de banderas (ver abajo la sección sobre rango de números enteros).
+    </p>
+    <br>
+    <h4>Writeback</h4>
+    <p>
+        El paso final, la escritura, simplemente «escribe» los resultados del paso de ejecución a una cierta dirección de memoria. Muy a menudo, los resultados se escriben en algún registro interno del CPU para acceso rápido por las instrucciones siguientes. En otros casos los resultados pueden escribirse en una memoria principal más lenta pero más barata y más grande. Algunos tipos de instrucciones manipulan el contador de programa en lugar de directamente producir datos de resultado. Estas se llaman generalmente «saltos» (jumps) y facilitan comportamientos como bucles, la ejecución condicional de programas (con el uso de saltos condicionales) y funciones en programas. Muchas instrucciones también cambian el estado de dígitos en un registro de «banderas». Estas banderas pueden usarse para influenciar cómo se comporta un programa, puesto que a menudo indican el resultado de varias operaciones. Por ejemplo, un tipo de instrucción de "comparación" considera dos valores y fija un número, en el registro de banderas, de acuerdo a cuál es el mayor. Entonces, una instrucción de salto posterior puede usar esta bandera para determinar el flujo del programa. 
+    </p>
+    <p>
+        Después de la ejecución de la instrucción y de la escritura de los datos resultantes, el proceso entero se repite con el siguiente ciclo de instrucción, normalmente leyendo la siguiente instrucción en secuencia debido al valor incrementado en el contador de programa. Si la instrucción completada era un salto, se modifica el contador de programa para contener la dirección de la instrucción a la cual se saltó, y la ejecución del programa continúa normalmente. En CPUs más complejas que la descrita aquí, pueden leerse, decodificarse y ejecutarse simultáneamente múltiples instrucciones. Esta sección describe normalmente se llama "entubado RISC clásico" (Classic RISC pipeline), que de hecho es bastante común entre las CPU simples usadas en muchos dispositivos electrónicos, a menudo llamadas microcontroladores.
+    </p>
+    <a href="#inicio">Volver al principio</a>
+
+    <hr>
+    
+    <h2 id="seccion6">Diseño e implementacion</h2>
+    <h4>Rango de enteros</h4>
+    <p>
+        La manera en la que una CPU representa los números es una opción de diseño que afecta a las más básicas formas en que el dispositivo funciona. Algunas de las primeras calculadoras digitales usaron, para representar números internamente, un modelo eléctrico del sistema de numeración decimal común (base diez). Otros ordenadores han usado sistemas de numeración más exóticos como el ternario (base tres). Casi todas las CPU modernas representan los números en forma binaria: cada dígito se representa por una cierta cantidad física de dos valores, como un voltaje "alto" o "bajo".
+    </p>
+    <p>
+        Con la representación numérica están relacionados el tamaño y la precisión de los números que una CPU puede representar. En el caso de una CPU binaria, un bit se refiere a una posición significativa en los números con los que trabaja una CPU. El número de bits (o de posiciones numéricas, o dígitos) que una CPU usa para representar los números a menudo se llama "tamaño de la palabra", "ancho de bits", "ancho de ruta de datos", o "precisión del número entero" cuando se ocupa estrictamente de números enteros (en oposición a números de coma flotante). Este número difiere entre las arquitecturas y, a menudo, dentro de diferentes unidades de la misma CPU. Por ejemplo, una CPU de 8 bits maneja un rango de números que pueden representarse con ocho dígitos binarios, cada uno de los cuales tiene dos valores posibles, y en combinación los 8 bits tienen 28 o 256 números discretos. En efecto, el tamaño del número entero fija un límite de hardware en el rango de números enteros que el software "corre" y que la CPU puede usar directamente.
+    </p>
+    <p>
+        El rango del número entero también puede afectar al número de posiciones en memoria que la CPU puede direccionar (localizar). Por ejemplo, si una CPU binaria utiliza 32 bits para representar una dirección de memoria y cada dirección de memoria representa a un octeto (8 bits), la cantidad máxima de memoria que la CPU puede direccionar es 232 octetos, es decir, 4 GB. Esta es una vista muy simple del espacio de dirección del CPU y muchos diseños modernos usan métodos de dirección mucho más complejos como paginación para localizar más memoria que su rango entero permitiría con un espacio de dirección plano.
+    </p>
+    <p>
+        Niveles más altos del rango de números enteros requieren más estructuras para manejar los dígitos adicionales y, por lo tanto, más complejidad, tamaño, uso de energía y, generalmente, coste. Por ello, no es del todo infrecuente, ver microcontroladores de 4 y 8 bits usados en aplicaciones modernas, aun cuando están disponibles CPU con un rango mucho más alto (de 16, 32, 64, e incluso 128 bits). Los microcontroladores más simples son generalmente más baratos, usan menos energía y, por lo tanto, disipan menos calor. Todo esto pueden ser consideraciones de diseño importantes para los dispositivos electrónicos. Sin embargo, en aplicaciones del extremo alto, los beneficios producidos por el rango adicional (más a menudo el espacio de dirección adicional) son más significativos y con frecuencia afectan las opciones del diseño. Para ganar algunas de las ventajas proporcionadas por las longitudes de bits tanto más bajas, como más altas, muchas CPUs están diseñadas con anchos de bit diferentes para diferentes unidades del dispositivo. Por ejemplo, el IBM System/370 usó una CPU que fue sobre todo de 32 bits, pero usó precisión de 128 bits dentro de sus unidades de coma flotante para facilitar mayor exactitud y rango de números de coma flotante.5​ Muchos diseños posteriores de CPU usan una mezcla de ancho de bits similar, especialmente cuando el procesador está diseñado para usos de propósito general donde se requiere un equilibrio razonable entre la capacidad de números enteros y de coma flotante. 
+    </p>
+    <a href="#inicio">Volver al principio</a>
+
+    <hr>
+    
+    <h2 id="seccion7">Frecuencia de reloj</h2>
+    <p>
+        La mayoría de las CPU y, de hecho, la mayoría de los dispositivos de lógica secuencial, son de naturaleza síncrona. Es decir, están diseñados y operan en función de una señal de sincronización. Esta señal, conocida como señal de reloj, usualmente toma la forma de una onda cuadrada periódica. Calculando el tiempo máximo en que las señales eléctricas pueden moverse en las varias bifurcaciones de los muchos circuitos de una CPU, los diseñadores pueden seleccionar un período apropiado para la señal del reloj.
+    </p>
+    <p>
+        Este período debe ser más largo que la cantidad de tiempo que necesita una señal para moverse, o propagarse en el peor de los casos. Al fijar el período del reloj a un valor bastante mayor sobre el retardo de la propagación del peor caso, es posible diseñar toda la CPU y la manera en la que mueve los datos alrededor de los "bordes" de la subida y bajada de la señal del reloj. Esto tiene la ventaja de simplificar la CPU significativamente, tanto en una perspectiva de diseño como en una perspectiva de cantidad de componentes. Sin embargo, esto también tiene la desventaja que toda la CPU debe esperar a sus elementos más lentos, aun cuando algunas unidades de la misma son mucho más rápidas. Esta limitación se ha compensado en gran parte por varios métodos de aumentar el paralelismo de la CPU (ver abajo).
+    </p>
+    <a href="#inicio">Volver al principio</a>
+
+
+</body>
+</html>

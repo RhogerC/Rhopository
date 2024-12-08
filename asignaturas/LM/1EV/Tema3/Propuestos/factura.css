@@ -1,0 +1,177 @@
+/*Confiuramos el tamaño y la fuente para todo el documento*/
+body{
+    font-size: 16px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*Estilos del header*/
+header{
+    display: flex;
+}
+
+.encabezado{
+    width: 100%;
+    padding: 0;
+    height: 175px;
+    
+}
+
+.encabezado img{
+    width: 150px;
+    margin-top: 0;
+    padding-top: 10px;
+    padding-left: 2em;
+}
+
+.encabezado p{
+    text-align: center;
+    padding-top: 5px;
+}
+
+#factura{
+    font-weight:bold;
+    font-size: 2em;
+    margin-top: 15px;
+    margin-bottom:0.5em;
+    text-align: left;
+    padding-left:8px;
+    
+}
+
+#tabla_factura{
+    padding-right: 1em;
+    border-spacing: 0.4em;
+}
+
+.campo1{
+    border: 1px black solid;
+    text-align: left;
+    padding-right: 2em;
+}
+
+.recuadro1{
+    border:1px black solid;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em; 
+    
+}
+
+/*Estilos del container*/
+
+#container{
+    padding: 0.5em;
+}
+
+/*datos de cliente*/
+#datos_cliente{
+    border-radius: 2%;
+    border:1px black solid;
+}
+
+.titulo{
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.tabla_cliente{
+    border-spacing: 0.5em;
+    padding-left: 1em;
+}
+
+.campo2{
+    text-align: left;
+}
+
+.recuadro2{
+    border:1px black solid;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;   
+}
+
+/*Lineas de factura*/
+#lineas_factura{
+    border-radius: 2%;
+    margin-top: 1em;
+    border:1px black solid;
+}
+
+#tabla_articulo{
+    width: 97%;
+    margin: 1em;
+    padding-right: 2em;
+    border-collapse: collapse;
+}
+
+.campo3{
+    font-weight: bold;   
+
+}
+
+.recuadro3{
+    text-align: left;
+    border: 1px black solid;
+    width: 13%;
+    padding-left: 10px;
+}
+
+.recuadro4{
+    text-align: left;
+    border: 1px black solid;
+    padding-left: 10px;
+}
+
+.recuadro5{
+    text-align: left;
+    border: 1px black solid;
+    width: 13%;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+
+#tabla_impuestos{
+    padding-left: 67%;
+    border-collapse: collapse;
+    display: flex;
+    margin-bottom: 1em;
+}
+
+
+.campo4{
+    border: 1px black solid;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+    
+
+}
+
+/*Footer*/
+#pago{
+    text-align: center;
+    font-weight:bold ;
+    font-size: small;
+}
+
+ul{
+    list-style: none;
+}
+
+#tipo_pago{
+    float: left;
+}
+
+#domiciliado{
+    font-size: larger;
+}
+
+#cuenta_bancaria{
+    float: right;
+    padding-right: 19%;
+}
+
