@@ -175,17 +175,14 @@ main h2{
 }
 
 #indice{
-
     display:block;
     width: 20%;
     float: left;
 }
 
 #contenido{
-    
     display: block;
     float: center;
-
 }
 
 /* Columna derecha - Aside */
