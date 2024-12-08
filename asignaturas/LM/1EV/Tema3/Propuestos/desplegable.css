@@ -1,0 +1,104 @@
+body{
+    margin-left: 0;
+    background-color:aquamarine;
+}
+
+/*Aplicamos estilos a los elementos del div */
+#titulo{
+    text-transform: uppercase;
+    font-size:8px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 1em;
+}
+
+h1{
+    margin: 0;
+
+}
+
+/*Aplicamos estilo a los ciclos*/
+.ciclo{
+    text-transform: uppercase;
+}
+
+
+/*Aplicamos estilo al nav y al color de fondo de los elementos li*/
+nav{
+    width: 100%;
+    border: 1px black solid;
+    padding: 0;
+}
+
+li{
+    background-color: white;
+}
+
+/*Aplicamos estilo el segundo nivel de lista y sus elemntos que estan identificados con un id*/
+#secciones{
+    display: flex;
+    list-style: none;
+    font-size: x-small;
+    padding-left: 0;
+    width: 100%;
+    margin: 0;
+    
+}
+
+#secciones li{
+    padding-left: 1em;
+    padding-right: 1em;
+    margin: 0.3em;
+    list-style: none;
+    position: relative;
+    cursor: pointer;
+}
+
+#secciones li a{
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+/*Aplicamos un estilo de fondo transparente a la lista de tercer nivel*/
+#secciones li ul{
+    background-color: transparent;
+}
+
+
+/*Aplicamos estilos a las listas de tercer nivel y hacemos que se oculten de forma prederminada*/
+.desplegable{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 150px;
+    z-index: 1000;
+    
+}
+
+/*Aplicamos la propiedad :hover para que cuando se pose el cursor encima sobre las listas con clase ciclo y que muestre la lista con clase .desplegable y muestre el contenido en bloque*/
+.ciclo:hover .desplegable{
+    display: block;
+}
+
+
+/*Usamos la propiedad :hover para que cuando se pose el raton se muestren los estilos aplicados */
+.desplegable li:hover{
+    background-color:red;
+    text-decoration: underline;
+}
+
+/*Aplicmos estilo a los enlances de texto que contiene la lista .deplegable*/
+.desplegable li a{
+    padding: 0.5em;
+    color: black;
+    font-size: 8px;
+    font-weight: bold;
+}
+
+

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="factura.css">
+    <title>Factura Rhopository</title>
+</head>
+<body>
+    <!--Creamos la etiqueta header para distribuir los elemenos que componen el encabezado de la factura y aplicarle un estilo a esta en el css-->
+    <header>
+        <!--Creamos 3 divs para poder utilizar la propiedad display:flex en el css-->
+        <!--Cremos los divs con una clase llamada encabezado para aplicar estilo a todos a la vez-->
+        <div class="encabezado"> 
+            <img src="imagenes/logoRho.jpg" alt="LogoRhopository">
+        </div>
+
+        <div class="encabezado">
+            <p>
+                Industrias Rhopository <br>
+                CIF: 12345678-R <br>
+                C/Forjadores s/n <br>
+                Isla del Hierro <br>
+                Tenerife <br>
+                España
+            </p>
+        </div>
+
+        <div class="encabezado">
+            <table id="tabla_factura">
+                <!--Damos un id a este p para darle solo estilo a el en el css-->
+                <p id="factura">Factura</p>
+                <tr>
+                    <!--Cremos una columna con una clase campo para darle estilo a la clase en el css-->
+                    <td class="campo1">Numero:</td>
+                    <!--Creamos una columna con una clase recuadro para darle estilo a la clase en el css-->
+                    <td class="recuadro1">1</td>
+                </tr>
+
+                <tr>
+                    <td class="campo1">Fecha:</td>
+                    <td class="recuadro1">30/04/2008</td>
+                </tr>
+            </table>
+        </div>
+
+        </header>
+
+    <div id="container">
+        
+        <div id="datos_cliente">
+            <p class="titulo">Datos del Cliente</p>
+        
+            <table class="tabla_cliente">
+                <tr>
+                    <td class="campo2">Cliente:</td>
+                    <td class="recuadro2">Tio Sam</td>
+                    <td class="campo2">CIF:</td>
+                    <td class="recuadro2">94-6666666</td>
+                </tr>
+            </table>
+    
+            <table class="tabla_cliente">
+                
+                <tr>
+                    <td class="campo2">Direccion:</td>
+                    <td colspan="3" class="recuadro2">Pensnsylvania Avenue, 1600</td>
+                    <td class="campo2">Provincia:</td>
+                    <td class="recuadro2">Washington</td>
+                </tr>
+            </table>
+    
+            <table class="tabla_cliente">
+                <tr>
+                    <td class="campo2">Pais:</td>
+                    <td class="recuadro2">Estados Unidos</td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="lineas_factura">
+            <p class="titulo">Lineas de factura</p>
+
+            <table id="tabla_articulo">
+                <tr>
+                    <td class="campo3">Cantidad</td>
+                    <td class="campo3">Articulo</td>
+                    <td class="campo3">Precio</td>
+                    <td class="campo3">Subtotal</td>
+                </tr>
+                <tr>
+                    <td class="recuadro3">1</td>
+                    <td class="recuadro4">AR001 - Armadura de oro reluciente</td>
+                    <td class="recuadro5">350.000$</td>
+                    <td class="recuadro5">350.000$</td>
+                </tr>
+                <tr>
+                    <td class="recuadro3">3</td>
+                    <td class="recuadro4">ES002 - Escudo antiproyectiles</td>
+                    <td class="recuadro5">50.000$</td>
+                    <td class="recuadro5">150.000$</td>
+                </tr>
+            </table>
+
+            <table id="tabla_impuestos">
+                <tr>
+                    <td class="campo4">Base Imponible</td>
+                    <td class="recuadro5">500.000$</td>
+                </tr>
+                <tr>
+                    <td class="campo4">Descuento</td>
+                    <td class="recuadro5">0</td>
+                </tr>
+                <tr>
+                    <td class="campo4">IVA 20%</td>
+                    <td class="recuadro5">100.000$</td>
+                </tr>
+                <tr>
+                    <td class="campo4">Total Neto</td>
+                    <td class="recuadro5">600.000$</td>
+                </tr>
+
+            </table>
+        </div>
+        
+    </div>
+
+    <footer>
+        <p id="pago">Forma de pago y Datos bancarios</p>
+
+        <form id="tipo_pago">
+            <ul>
+                <li>
+                    Pago al contado <input type="checkbox">
+                </li>
+                <li>
+                    Pago domiciliado <input type="checkbox" checked id="domiciliado">
+                </li>
+                <li>
+                    Pago con tarjeta <input type="checkbox">
+                </li>
+            </ul>
+        </form>
+
+        <form id="cuenta_bancaria">
+            <ul>
+                <li>
+                    Entidad: <input type="text" id="entidad">
+                </li>
+                <li>
+                    Nª de cuenta: <input type="number" id="cuenta">
+                </li>
+            </ul>
+
+        </form>
+    </footer>
+</body>
+</html>
