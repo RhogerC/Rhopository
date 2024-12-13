@@ -9,7 +9,7 @@ const video = document.getElementById("cv-video");
 let isEnglish = false;
 
 // Contraseña para proteger foto y video
-const PASSWORD = "12345";
+const PASSWORD = "rcardona25";
 
 // Contenido en español e inglés
 const translations = {
