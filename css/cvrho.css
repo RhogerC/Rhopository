@@ -13,3 +13,8 @@ img, video {
 #telefono{
     font-weight: bold;
 }
+
+#listahobbies{
+    position: relative;
+    display:inline-flex;
+}
