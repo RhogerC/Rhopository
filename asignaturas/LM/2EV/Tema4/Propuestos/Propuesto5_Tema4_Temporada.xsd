@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Definición del elemento raíz <temporada> -->
+  <xs:element name="temporada">
+    <xs:complexType>
+      <xs:sequence>
+        <!-- Una temporada tiene 5 jornadas -->
+        <xs:element name="jornada" maxOccurs="5" minOccurs="5">
+          <xs:complexType>
+            <xs:sequence>
+              <!-- Una jornada tiene 3 partidos -->
+              <xs:element name="partido" maxOccurs="3" minOccurs="3">
+                <xs:complexType>
+                  <xs:sequence>
+                    <!-- Fecha del partido -->
+                    <xs:element name="fecha" type="xs:date"/>
+                    <!-- Estadio con atributo espectadores (opcional) -->
+                    <xs:element name="estadio">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute name="espectadores" type="espectadoresType" use="optional"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <!-- Equipo local -->
+                    <xs:element name="local" type="paisType"/>
+                    <!-- Equipo visitante -->
+                    <xs:element name="visitante" type="paisType"/>
+                    <!-- Resultado o aplazado -->
+                    <xs:choice>
+                      <xs:element name="resultado">
+                        <xs:complexType>
+                          <xs:attribute name="local" type="xs:integer" use="required"/>
+                          <xs:attribute name="visitante" type="xs:integer" use="required"/>
+                        </xs:complexType>
+                      </xs:element>
+                      <xs:element name="aplazado">
+                        <xs:complexType/>
+                      </xs:element>
+                    </xs:choice>
+                  </xs:sequence>
+                  <!-- Número del partido -->
+                  <xs:attribute name="numero" type="xs:integer" use="required"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <!-- Número de la jornada -->
+            <xs:attribute name="numero" type="xs:integer" use="required"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <!-- Año de la temporada -->
+      <xs:attribute name="año" type="xs:integer" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Definición del tipo para el atributo "espectadores" -->
+  <xs:simpleType name="espectadoresType">
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="0"/>
+      <xs:maxInclusive value="80000"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Definición del tipo para los países -->
+  <xs:simpleType name="paisType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Inglaterra"/>
+      <xs:enumeration value="Francia"/>
+      <xs:enumeration value="Irlanda"/>
+      <xs:enumeration value="Escocia"/>
+      <xs:enumeration value="Gales"/>
+      <xs:enumeration value="Italia"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+</xs:schema>

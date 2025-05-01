@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE datos_ticket SYSTEM "ticket.dtd">
+<datos_ticket id="0001">
+    <fechaHora>2025-02-10T22:57:00</fechaHora>
+    <precioTotal moneda="EURO">
+        <precioSinIVA>100.00</precioSinIVA>
+        <cantidadIVA>21.00</cantidadIVA>
+        <PVPTotal>121.00</PVPTotal>
+    </precioTotal>
+    <formaDePago tipo="tarjeta">
+        <tipoTarjeta tipo="Visa"/>
+        <numeroTarjeta numero="************1234"/>
+        <nombreCliente>Juan Gomez</nombreCliente>
+    </formaDePago>
+</datos_ticket>

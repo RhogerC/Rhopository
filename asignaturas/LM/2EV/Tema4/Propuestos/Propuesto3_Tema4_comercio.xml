@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE datos_comercio SYSTEM "comercio.dtd">
+<datos_comercio>
+    <nombre>Rhommel's Grocery</nombre>
+    <direccion>C/Vitrubio 15, 28025, Madrid, España</direccion>
+    <CIF>B5968523Y</CIF>
+    <telefono>913886596</telefono>
+</datos_comercio>

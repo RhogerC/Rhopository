@@ -1,0 +1,40 @@
+﻿<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <!-- Número de teléfono con prefijo internacional -->
+  <xs:element name="telefono">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:pattern value="\+\d{1,3}(\.\d{1,4}){1,4}"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+
+  <!-- Matrícula de coche española -->
+  <xs:element name="matricula">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:pattern value="\d{4}-[A-Z]{3}"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+
+  <!-- DNI o NIE español -->
+  <xs:element name="dniNie">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <!-- Restricción para DNI -->
+        <xs:pattern value="\d{8}[A-Z]"/>
+        <!-- Restricción para NIE -->
+        <xs:pattern value="[X|Y|Z]\d{7}[A-Z]"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+
+  <!-- Correo electrónico -->
+  <xs:element name="correoElectronico">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:pattern value="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+</xs:schema>

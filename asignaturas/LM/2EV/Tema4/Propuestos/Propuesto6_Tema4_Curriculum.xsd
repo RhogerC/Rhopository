@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<curriculum>
+    <!-- Sección a: Datos personales -->
+    <datos_personales>
+        <nombre>Juan</nombre>
+        <apellidos>Pérez Gómez</apellidos>
+        <fecha_nacimiento>1990-05-15</fecha_nacimiento>
+        <lugar_nacimiento>Madrid, España</lugar_nacimiento>
+        <nacionalidades>
+            <nacionalidad>Española</nacionalidad>
+            <nacionalidad>Mexicana</nacionalidad>
+        </nacionalidades>
+        <identificacion tipo="NIF">12345678A</identificacion>
+        <foto>juan_perez.jpg</foto>
+    </datos_personales>
+
+    <!-- Sección b: Datos de contacto -->
+    <datos_contacto>
+        <via tipo="Calle">Mayor</via>
+        <numero>10</numero>
+        <portal>2</portal>
+        <escalera>A</escalera>
+        <piso>3</piso>
+        <puerta>B</puerta>
+        <codigo_postal>28013</codigo_postal>
+        <pais>España</pais>
+        <email>juan.perez@example.com</email>
+        <telefono_movil>+34 612 345 678</telefono_movil>
+        <telefono_fijo>+34 91 123 4567</telefono_fijo>
+    </datos_contacto>
+
+    <!-- Sección c: Datos de contacto adicionales -->
+    <datos_contacto_adicionales>
+        <pagina_web>www.juanperez.com</pagina_web>
+        <redes_sociales>
+            <red_social tipo="LinkedIn">linkedin.com/in/juanperez</red_social>
+            <red_social tipo="Facebook">facebook.com/juanperez</red_social>
+            <red_social tipo="Twitter">twitter.com/juanperez</red_social>
+        </redes_sociales>
+    </datos_contacto_adicionales>
+
+    <!-- Sección d: Formación -->
+    <formacion>
+        <estudio>
+            <nombre>Ingeniería Informática</nombre>
+            <lugar>Universidad Complutense de Madrid</lugar>
+            <fecha_inicio>2008-09-01</fecha_inicio>
+            <fecha_fin>2013-06-30</fecha_fin>
+        </estudio>
+        <estudio>
+            <nombre>Máster en Desarrollo de Software</nombre>
+            <lugar>Universidad Politécnica de Madrid</lugar>
+            <fecha_inicio>2013-09-01</fecha_inicio>
+            <fecha_fin>2014-06-30</fecha_fin>
+        </estudio>
+    </formacion>
+
+    <!-- Sección e: Idiomas -->
+    <idiomas>
+        <idioma>
+            <nombre>Español</nombre>
+            <materno>true</materno>
+        </idioma>
+        <idioma>
+            <nombre>Inglés</nombre>
+            <nivel_expresion_oral>alto</nivel_expresion_oral>
+            <nivel_comprension_oral>alto</nivel_comprension_oral>
+            <nivel_expresion_escrita>medio</nivel_expresion_escrita>
+            <nivel_comprension_escrita>medio</nivel_comprension_escrita>
+            <materno>false</materno>
+        </idioma>
+    </idiomas>
+
+    <!-- Sección f: Experiencia laboral -->
+    <experiencia_laboral>
+        <experiencia>
+            <lugar>Tech Solutions S.A.</lugar>
+            <puesto>Desarrollador Senior</puesto>
+            <fecha_comienzo>2015-07-01</fecha_comienzo>
+            <fecha_fin>2020-12-31</fecha_fin>
+        </experiencia>
+        <experiencia>
+            <lugar>Innovatech</lugar>
+            <puesto>Jefe de Proyectos</puesto>
+            <fecha_comienzo>2021-01-01</fecha_comienzo>
+            <fecha_fin>2023-10-31</fecha_fin>
+        </experiencia>
+    </experiencia_laboral>
+
+    <!-- Sección g: Competencias socio-profesionales -->
+    <competencias_socio_profesionales>
+        <competencia>
+            <nombre>Liderazgo</nombre>
+            <nivel>4</nivel>
+        </competencia>
+        <competencia>
+            <nombre>Trabajo en equipo</nombre>
+            <nivel>5</nivel>
+        </competencia>
+        <competencia>
+            <nombre>Iniciativa</nombre>
+            <nivel>3</nivel>
+        </competencia>
+    </competencias_socio_profesionales>
+
+    <!-- Sección h: Datos adicionales -->
+    <datos_adicionales>
+        <aficiones>
+            <aficion>Fotografía</aficion>
+            <aficion>Viajes</aficion>
+        </aficiones>
+        <disponibilidad_viajar>true</disponibilidad_viajar>
+        <vehiculo_propio>true</vehiculo_propio>
+        <licencias_conducir>
+            <licencia tipo="B">Coche</licencia>
+            <licencia tipo="A">Moto</licencia>
+        </licencias_conducir>
+    </datos_adicionales>
+</curriculum>

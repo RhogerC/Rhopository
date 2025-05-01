@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mensaje SYSTEM "mensaje.dtd">
+<mensaje>
+    <email respuesta="no">
+        <cabecera>
+            <emisor>Juan Pérez</emisor>
+            <receptor>Ana Gómez</receptor>
+            <receptor>Carlos Ruiz</receptor>
+            <fecha>2023-10-15</fecha>
+        </cabecera>
+        <asunto>Reunión de Proyecto</asunto>
+        <texto>
+            Hola a todos,
+            <saludo>Saludos cordiales</saludo>
+            Les recuerdo que la reunión de proyecto está programada para el próximo lunes.
+        </texto>
+        <texto>
+            Por favor, confirmen su asistencia.
+        </texto>
+    </email>
+</mensaje>

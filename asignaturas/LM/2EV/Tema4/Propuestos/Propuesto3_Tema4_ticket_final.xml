@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ticket SYSTEM "ticket_final.dtd">
+<ticket id="0001">
+    <fechaHora>2025-02-10T22:57:00</fechaHora>
+    <precioTotal moneda="EURO">
+        <precioSinIVA>100.00</precioSinIVA>
+        <cantidadIVA>21.00</cantidadIVA>
+        <PVPTotal>121.00</PVPTotal>
+    </precioTotal>
+    <formaDePago tipo="tarjeta">
+        <tipoTarjeta tipo="Visa"/>
+        <numeroTarjeta numero="************1234"/>
+        <nombreCliente>Juan Gomez</nombreCliente>
+    </formaDePago>
+    <datosComercio>
+        <nombre>Rhommel's Grocery</nombre>
+        <direccion>C/Vitrubio 15, 28025, Madrid, España</direccion>
+        <CIF>B5968523Y</CIF>
+        <telefono>913886596</telefono>
+    </datosComercio>
+    <datosCompra>
+        <lineaCompra>
+            <nombreArticulo>Bocata</nombreArticulo>
+            <cantidad>100</cantidad>
+            <precioUnitarioSinIVA>1.00</precioUnitarioSinIVA>
+            <IVA>0.21</IVA>
+            <PVP>1.21</PVP>
+        </lineaCompra>
+    </datosCompra>
+</ticket>

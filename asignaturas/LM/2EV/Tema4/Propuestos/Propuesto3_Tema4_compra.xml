@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE datos_compra SYSTEM "compra.dtd">
+<datos_compra>
+    <lineaCompra>
+        <nombreArticulo>Bocata</nombreArticulo>
+        <cantidad>100</cantidad>
+        <precioUnitarioSinIVA>1.00</precioUnitarioSinIVA>
+        <IVA>0.21</IVA>
+        <PVP>1.21</PVP>
+    </lineaCompra>
+</datos_compra>

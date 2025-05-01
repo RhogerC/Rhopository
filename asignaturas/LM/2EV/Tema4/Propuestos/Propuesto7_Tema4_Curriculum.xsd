@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!-- Definición del elemento raíz <curriculum> -->
+    <xs:element name="curriculum">
+        <xs:complexType>
+            <xs:sequence>
+                <!-- Sección a: Datos personales -->
+                <xs:element name="datos_personales">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombre" type="xs:string"/>
+                            <xs:element name="apellidos" type="xs:string"/>
+                            <xs:element name="fecha_nacimiento" type="xs:date"/>
+                            <xs:element name="lugar_nacimiento" type="xs:string"/>
+                            <xs:element name="nacionalidades">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nacionalidad" type="xs:string" maxOccurs="unbounded"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="identificacion">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:string">
+                                            <xs:attribute name="tipo" use="required">
+                                                <xs:simpleType>
+                                                    <xs:restriction base="xs:string">
+                                                        <xs:enumeration value="NIF"/>
+                                                        <xs:enumeration value="NIE"/>
+                                                    </xs:restriction>
+                                                </xs:simpleType>
+                                            </xs:attribute>
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="foto" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <!-- Sección b: Datos de contacto -->
+                <xs:element name="datos_contacto">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="via">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:string">
+                                            <xs:attribute name="tipo" use="required">
+                                                <xs:simpleType>
+                                                    <xs:restriction base="xs:string">
+                                                        <xs:enumeration value="Calle"/>
+                                                        <xs:enumeration value="Avenida"/>
+                                                        <xs:enumeration value="Plaza"/>
+                                                    </xs:restriction>
+                                                </xs:simpleType>
+                                            </xs:attribute>
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="numero" type="xs:string" minOccurs="0"/>
+                            <xs:element name="portal" type="xs:string" minOccurs="0"/>
+                            <xs:element name="escalera" type="xs:string" minOccurs="0"/>
+                            <xs:element name="piso" type="xs:string"/>
+                            <xs:element name="puerta" type="xs:string" minOccurs="0"/>
+                            <xs:element name="codigo_postal" type="xs:string"/>
+                            <xs:element name="pais" type="xs:string"/>
+                            <xs:element name="email" type="xs:string"/>
+                            <xs:element name="telefono_movil" type="xs:string"/>
+                            <xs:element name="telefono_fijo" type="xs:string" minOccurs="0"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <!-- Sección c: Datos de contacto adicionales -->
+                <xs:element name="datos_contacto_adicionales">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="pagina_web" type="xs:string" minOccurs="0"/>
+                            <xs:element name="redes_sociales">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="red_social" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:string">
+                                                        <xs:attribute name="tipo" use="required">
+                                                            <xs:simpleType>
+                                                                <xs:restriction base="xs:string">
+                                                                    <xs:enumeration value="LinkedIn"/>
+                                                                    <xs:enumeration value="Facebook"/>
+                                                                    <xs:enumeration value="Twitter"/>
+                                                                </xs:restriction>
+                                                            </xs:simpleType>
+                                                        </xs:attribute>
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <!-- Sección d: Formación -->
+                <xs:element name="formacion">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="estudio" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nombre" type="xs:string"/>
+                                        <xs:element name="lugar" type="xs:string"/>
+                                        <xs:element name="fecha_inicio" type="xs:date"/>
+                                        <xs:element name="fecha_fin" type="xs:date"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <!-- Sección e: Idiomas -->
+                <xs:element name="idiomas">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="idioma" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nombre" type="xs:string"/>
+                                        <xs:element name="nivel_expresion_oral" type="xs:string" minOccurs="0"/>
+                                        <xs:element name="nivel_comprension_oral" type="xs:string" minOccurs="0"/>
+                                        <xs:element name="nivel_expresion_escrita" type="xs:string" minOccurs="0"/>
+                                        <xs:element name="nivel_comprension_escrita" type="xs:string" minOccurs="0"/>
+                                        <xs:element name="materno" type="xs:boolean"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <!-- Sección f: Experiencia laboral -->
+                <xs:element name="experiencia_laboral">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="experiencia" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="lugar" type="xs:string"/>
+                                        <xs:element name="puesto" type="xs:string" minOccurs="0"/>
+                                        <xs:element name="fecha_comienzo" type="xs:date"/>
+                                        <xs:element name="fecha_fin" type="xs:date"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <!-- Sección g: Competencias socio-profesionales -->
+                <xs:element name="competencias_socio_profesionales">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="competencia" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nombre" type="xs:string"/>
+                                        <xs:element name="nivel">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:integer">
+                                                    <xs:minInclusive value="1"/>
+                                                    <xs:maxInclusive value="5"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <!-- Sección h: Datos adicionales -->
+                <xs:element name="datos_adicionales">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="aficiones">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="aficion" type="xs:string" maxOccurs="unbounded"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="disponibilidad_viajar" type="xs:boolean"/>
+                            <xs:element name="vehiculo_propio" type="xs:boolean"/>
+                            <xs:element name="licencias_conducir">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="licencia" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:string">
+                                                        <xs:attribute name="tipo" use="required">
+                                                            <xs:simpleType>
+                                                                <xs:restriction base="xs:string">
+                                                                    <xs:enumeration value="A"/>
+                                                                    <xs:enumeration value="B"/>
+                                                                </xs:restriction>
+                                                            </xs:simpleType>
+                                                        </xs:attribute>
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
