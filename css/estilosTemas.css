@@ -271,7 +271,8 @@ footer ul li a:hover {
     word-wrap: break-word;      /* Ayuda a ajustar palabras largas (si usas pre-wrap) */
     font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace; /* Fuente monoespaciada */
     font-size: 0.9em;           /* Tamaño de fuente ligeramente menor */
-    color: #333;                /* Color del texto */
+    color: #333;
+    width: 450px;                /* Color del texto */
 }
 
 /* Estilo opcional si el texto de carga/error aparece */
