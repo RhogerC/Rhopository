@@ -42,5 +42,13 @@ function loadXmlContent(filePath, containerId) {
 // y usar 'defer' en la etiqueta script del HTML.
  document.addEventListener('DOMContentLoaded', function() {
      loadXmlContent('Propuestos/Propuesto1_Tema4.xml', 'xml-Propuesto4.1');
-     loadXmlContent('Propuestos/Otro_Archivo.xml', 'xml-container-2');
+     loadXmlContent('Propuestos/Propuesto1_Tema4.xml', 'xml-Propuesto4.2');
+     loadXmlContent('Propuestos/Propuesto1_Tema4.xml', 'xml-Propuesto4.3');
+     loadXmlContent('Propuestos/Propuesto1_Tema4.xml', 'xml-Propuesto4.4');
+     loadXmlContent('Propuestos/Propuesto1_Tema4.xml', 'xml-Propuesto4.5');
+     loadXmlContent('Propuestos/Propuesto1_Tema4.xml', 'xml-Propuesto4.6');
+     loadXmlContent('Propuestos/Propuesto1_Tema4.xml', 'xml-Propuesto4.7');
+     loadXmlContent('Propuestos/Propuesto1_Tema4.xml', 'xml-Propuesto4.8');
+     loadXmlContent('Propuestos/Propuesto1_Tema4.xml', 'xml-Propuesto4.9');
+     loadXmlContent('Propuestos/Propuesto1_Tema4.xml', 'xml-Propuesto4.10');
  });
