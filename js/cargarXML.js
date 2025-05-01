@@ -42,13 +42,13 @@ function loadXmlContent(filePath, containerId) {
 // y usar 'defer' en la etiqueta script del HTML.
  document.addEventListener('DOMContentLoaded', function() {
      loadXmlContent('Propuestos/Propuesto1_Tema4.xml', 'xml-Propuesto4.1');
-     loadXmlContent('Propuestos/Propuesto1_Tema4.xml', 'xml-Propuesto4.2');
-     loadXmlContent('Propuestos/Propuesto1_Tema4.xml', 'xml-Propuesto4.3');
-     loadXmlContent('Propuestos/Propuesto1_Tema4.xml', 'xml-Propuesto4.4');
-     loadXmlContent('Propuestos/Propuesto1_Tema4.xml', 'xml-Propuesto4.5');
-     loadXmlContent('Propuestos/Propuesto1_Tema4.xml', 'xml-Propuesto4.6');
-     loadXmlContent('Propuestos/Propuesto1_Tema4.xml', 'xml-Propuesto4.7');
-     loadXmlContent('Propuestos/Propuesto1_Tema4.xml', 'xml-Propuesto4.8');
-     loadXmlContent('Propuestos/Propuesto1_Tema4.xml', 'xml-Propuesto4.9');
-     loadXmlContent('Propuestos/Propuesto1_Tema4.xml', 'xml-Propuesto4.10');
+     loadXmlContent('Propuestos/Propuesto3_Tema4_comercio.xml', 'xml-Propuesto4.2');
+     loadXmlContent('Propuestos/Propuesto3_Tema4_compra.xml', 'xml-Propuesto4.3');
+     loadXmlContent('Propuestos/Propuesto3_Tema4_ticket_final.xml', 'xml-Propuesto4.4');
+     loadXmlContent('Propuestos/Propuesto3_Tema4_ticket.xml', 'xml-Propuesto4.5');
+     loadXmlContent('Propuestos/Propuesto5_Tema4_Temporada.xml', 'xml-Propuesto4.6');
+     loadXmlContent('Propuestos/Propuesto6_Tema4_Curriculum.xml', 'xml-Propuesto4.7');
+     loadXmlContent('Propuestos/Propuesto7_Tema4_Curriculum.xml', 'xml-Propuesto4.8');
+     loadXmlContent('Propuestos/Propuesto8_Tema4_Mensaje.xml', 'xml-Propuesto4.9');
+     loadXmlContent('Propuestos/Propuesto10_Tema4_Tipos.xml', 'xml-Propuesto4.10');
  });
