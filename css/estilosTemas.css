@@ -259,6 +259,27 @@ footer ul li a:hover {
     text-decoration: underline;
 }
 
+.lenguaje-xml {
+    display: block; /* Asegura que ocupe su propio espacio */
+    background-color: #f8f8f8; /* Un fondo gris claro */
+    border: 1px solid #ddd;     /* Un borde sutil */
+    padding: 15px;              /* Espacio interior */
+    border-radius: 5px;         /* Bordes redondeados */
+    overflow-x: auto;           /* Scroll horizontal si el código es muy largo */
+    white-space: pre;           /* Mantiene espacios y saltos de línea, pero no ajusta líneas largas */
+    /* white-space: pre-wrap; */ /* Alternativa: Mantiene espacios y ajusta líneas largas */
+    word-wrap: break-word;      /* Ayuda a ajustar palabras largas (si usas pre-wrap) */
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace; /* Fuente monoespaciada */
+    font-size: 0.9em;           /* Tamaño de fuente ligeramente menor */
+    color: #333;                /* Color del texto */
+}
+
+/* Estilo opcional si el texto de carga/error aparece */
+.lenguaje-xml:empty::before {
+     content: "Cargando..."; /* Texto si está vacío inicialmente */
+     color: #888;
+}
+
 /* Responsividad */
 @media (max-width: 768px) {
     #content {
