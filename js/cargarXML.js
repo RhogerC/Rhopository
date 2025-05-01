@@ -46,9 +46,9 @@ function loadXmlContent(filePath, containerId) {
      loadXmlContent('Propuestos/Propuesto3_Tema4_compra.xml', 'xml-Propuesto4.3');
      loadXmlContent('Propuestos/Propuesto3_Tema4_ticket_final.xml', 'xml-Propuesto4.4');
      loadXmlContent('Propuestos/Propuesto3_Tema4_ticket.xml', 'xml-Propuesto4.5');
-     loadXmlContent('Propuestos/Propuesto5_Tema4_Temporada.xml', 'xml-Propuesto4.6');
-     loadXmlContent('Propuestos/Propuesto6_Tema4_Curriculum.xml', 'xml-Propuesto4.7');
-     loadXmlContent('Propuestos/Propuesto7_Tema4_Curriculum.xml', 'xml-Propuesto4.8');
-     loadXmlContent('Propuestos/Propuesto8_Tema4_Mensaje.xml', 'xml-Propuesto4.9');
-     loadXmlContent('Propuestos/Propuesto10_Tema4_Tipos.xml', 'xml-Propuesto4.10');
+     loadXmlContent('Propuestos/Propuesto5_Tema4_Temporada.xsd', 'xsd-Propuesto4.5');
+     loadXmlContent('Propuestos/Propuesto6_Tema4_Curriculum.xsd', 'xsd-Propuesto4.6');
+     loadXmlContent('Propuestos/Propuesto7_Tema4_Curriculum.xsd', 'xsd-Propuesto4.7');
+     loadXmlContent('Propuestos/Propuesto8_Tema4_Mensaje.xsd', 'xsd-Propuesto4.8');
+     loadXmlContent('Propuestos/Propuesto10_Tema4_Tipos.xsd', 'xsd-Propuesto4.10');
  });
