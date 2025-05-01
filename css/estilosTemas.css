@@ -270,7 +270,7 @@ footer ul li a:hover {
     /* white-space: pre-wrap; */ /* Alternativa: Mantiene espacios y ajusta líneas largas */
     word-wrap: break-word;      /* Ayuda a ajustar palabras largas (si usas pre-wrap) */
     font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace; /* Fuente monoespaciada */
-    font-size: 0.5em;           /* Tamaño de fuente ligeramente menor */
+    font-size: 0.2em;           /* Tamaño de fuente ligeramente menor */
     color: #333;                /* Color del texto */
 }
 
