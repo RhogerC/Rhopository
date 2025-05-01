@@ -46,6 +46,9 @@ function loadXmlContent(filePath, containerId) {
      loadXmlContent('Propuestos/Propuesto3_Tema4_compra.xml', 'xml-Propuesto4.3-compra');
      loadXmlContent('Propuestos/Propuesto3_Tema4_ticket_final.xml', 'xml-Propuesto4.3-ticket-final');
      loadXmlContent('Propuestos/Propuesto3_Tema4_ticket.xml', 'xml-Propuesto4.3-ticket');
+
+
+     
      loadXmlContent('Propuestos/Propuesto5_Tema4_Temporada.xsd', 'xsd-Propuesto4.5');
      loadXmlContent('Propuestos/Propuesto6_Tema4_Curriculum.xsd', 'xsd-Propuesto4.6');
      loadXmlContent('Propuestos/Propuesto7_Tema4_Curriculum.xsd', 'xsd-Propuesto4.7');
