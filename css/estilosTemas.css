@@ -215,7 +215,7 @@ main h2{
     overflow: auto;             /* Muestra scrollbars (vertical/horizontal) SI el contenido es más grande */
     white-space: pre;           /* Mantiene espacios/saltos de línea, NO ajusta líneas largas */
     font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace; /* Fuente monoespaciada */
-    font-size: 0.85em;          /* Tamaño de fuente (ajusta a tu gusto) */
+    font-size: 0.5em;          /* Tamaño de fuente (ajusta a tu gusto) */
     color: #333;                /* Color del texto */
     border-radius: 4px;         /* Bordes redondeados (opcional) */
     box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
