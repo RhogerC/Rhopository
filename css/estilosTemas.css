@@ -219,6 +219,7 @@ main h2{
     color: #333;                /* Color del texto */
     border-radius: 4px;         /* Bordes redondeados (opcional) */
     box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+    max-width: fit-content;
 }
 
 .div-xml{
