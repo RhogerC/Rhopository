@@ -227,6 +227,10 @@ main h2{
     margin: 1em auto; 
 }
 
+.div-tema5{
+    width: 100%;
+}
+
 #paginascontenidas{
     height: 500px;
 }
