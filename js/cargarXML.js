@@ -54,4 +54,7 @@ function loadXmlContent(filePath, containerId) {
      loadXmlContent('Propuestos/Propuesto7_Tema4_Curriculum.xsd', 'xsd-Propuesto4.7');
      loadXmlContent('Propuestos/Propuesto8_Tema4_Mensaje.xsd', 'xsd-Propuesto4.8');
      loadXmlContent('Propuestos/Propuesto10_Tema4_Tipos.xsd', 'xsd-Propuesto4.10');
+
+
+      loadXmlContent('../Propuestos/Tema6/Ejercicio 4/Ejercicio4.xml', 'xml-Ejercicio-4');
  });
