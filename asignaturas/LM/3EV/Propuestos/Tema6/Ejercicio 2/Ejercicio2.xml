@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="Ejercicio2.xsl"?>
+    <curriculum>
+        <datosPersonales>
+            <nombre>José Andrés Sánchez García</nombre>
+            <fechaNacimiento>07/02/1979</fechaNacimiento>
+            <lugarNacimiento>Zaragoza</lugarNacimiento>
+            <estadoCivil>Casado</estadoCivil>
+        </datosPersonales>
+        <formacion>
+            <estudio>
+                <descripcion>Técnico superior en radiotelecomunicación</descripcion>
+                <lugar>Escuela Superior de Electrónica</lugar>
+                <periodo>De 01/10/1995 a 30/06/1997</periodo>
+            </estudio>
+            <estudio>
+                <descripcion>Máster en dirección de empresas</descripcion>
+                <lugar>Escuela de Negocios Metropolitana</lugar>
+                <periodo>De 10/01/2000 a 30/06/2001</periodo>
+            </estudio>
+        </formacion>
+        <idiomas>
+            <idioma nombre="Castellano" maternal="sí­"/>
+            <idioma nombre="Inglés">
+                <nivel>
+                    <eo>3</eo>
+                    <co>2</co>
+                    <ee>3</ee>
+                    <ce>4</ce>
+                </nivel>
+            </idioma>
+            <idioma nombre="Francés">
+                <nivel>
+                    <eo>2</eo>
+                    <co>2</co>
+                    <ee>3</ee>
+                    <ce>3</ce>
+                </nivel>
+            </idioma>
+        </idiomas>
+        <experienciaLaboral>
+            <empleo>
+                <lugar>Policí­a</lugar>
+                <puesto>Inspector</puesto>
+                <periodo>De 14/03/2004 a </periodo>
+            </empleo>
+                <empleo>
+                <lugar>Aeropuerto</lugar>
+                <puesto>Radiotelegrafista</puesto>
+                <periodo>De 12/09/2001 a 07/03/2004</periodo>
+            </empleo>
+        </experienciaLaboral>
+        <otrasInformaciones>
+            <licencias>
+                <licencia>B1</licencia>
+            </licencias>
+            <propio>sí­</propio>
+            <descripcion>Tí­mido, perfeccionista, polifacético</descripcion>
+        </otrasInformaciones>
+    </curriculum>

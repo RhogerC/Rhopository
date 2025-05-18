@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<reciboBancario>
+  <banco>
+    <nombre>Banco Seguro</nombre>
+    <sucursal>4321 (Madrid)</sucursal>
+    <logo>logo_banco_seguro.png</logo>
+  </banco>
+
+  <cuentaBancaria moneda="EURO">
+    <numero>12344321551000220001</numero>
+  </cuentaBancaria>
+
+  <titular>
+    <nombre>María Blanco Iglesias</nombre>
+  </titular>
+
+  <datosRecibo>
+    <fechaEmision>2012-06-01</fechaEmision>
+    <fechaValor>2012-06-04</fechaValor>
+    <numeroRecibo>r03_2012_06_01</numeroRecibo>
+    <referencia>a1b2c34de5f6g7h8</referencia>
+    <entidadEmisora>
+      <nombre>Ayto. de Madrid</nombre>
+      <nif>B87654321</nif>
+    </entidadEmisora>
+    <importeTotal>208.34</importeTotal>
+    <conceptos>
+      <concepto>
+        <descripcion>Impuesto de bienes inmuebles</descripcion>
+        <cantidad>208.34</cantidad>
+      </concepto>
+      <concepto>
+        <descripcion>Tasa de recogida de residuos</descripcion>
+        <cantidad>26.83</cantidad>
+      </concepto>
+    </conceptos>
+  </datosRecibo>
+</reciboBancario>
