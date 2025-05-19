@@ -1,395 +1,181 @@
-/* Reset básico */
-/* Estilos generales */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* css/estilosYo.css */
 
+/* Estilos generales (similares a estilos.css o estilosAsignatura.css) */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
 }
 
-/* Contenedor principal */
-.container {
-    width: 100%;
-    margin: 0 auto;
+/* Ajustar el ancho máximo del contenedor principal de Bootstrap al 90% */
+.container,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl,
+.container-xxl {
+    max-width: 90%;
 }
 
-/* Estilo general para el header */
-header {
-    display: flex; /* Usamos Flexbox para dividir el espacio */
-    justify-content: space-between; /* Distribuye el espacio entre los elementos */
-    align-items: center; /* Alinea verticalmente los elementos al centro */
-    padding: 10px 10px; /* Espaciado alrededor del header */
-    background-color: rgb(7, 7, 7); /* Fondo oscuro (puedes cambiarlo según el diseño) */
-    color: white; /* Color de texto */
+/* Header Principal */
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
+    color: #ff6347;
+}
+.navbar-dark .navbar-nav .nav-link.active { /* Estilo para el enlace activo en la navbar principal */
+    color: #ff6347;
+    font-weight: bold; /* Opcional: hacerlo más prominente */
+}
+header .h2 { 
+    font-size: 1.75rem; 
+    color: white;
 }
 
-/* Contenedor interno para el header */
-header .container {
-    display: flex; /* Distribuye los elementos dentro del contenedor */
-    width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
-    align-items: center; /* Centra verticalmente los elementos dentro del contenedor */
-}
-
-/* Estilo del logo */
-header .logo img {
-    width: 80px; /* Ajusta el tamaño del logo */
-    height: auto;
-}
-
-/* Estilo del título */
-header .title {
-    flex-grow: 1; /* Hace que el título ocupe el espacio restante entre el logo y la navegación */
-    text-align: center; /* Centra el texto */
-}
-
-/* Estilo del menú de navegación */
-nav {
-    display: flex; /* Usa Flexbox para los elementos del menú */
-}
-
-nav ul {
-    list-style: none; /* Elimina los puntos de lista */
-    padding: 0;
-    margin: 0;
-    display: flex; /* Los elementos del menú estarán en una línea */
-}
-
-nav ul li {
-    margin: 0 15px; /* Espaciado entre los elementos del menú */
-}
-
-nav ul li a {
-    text-decoration: none; /* Elimina el subrayado de los enlaces */
-    color: white; /* Color de los enlaces */
-    font-size: 16px; /* Tamaño de la fuente */
-}
-
-nav ul li a:hover {
-    color: #ff6347; /* Color al pasar el mouse sobre los enlaces */
-}
-
-
-
-/* Menú desplegable debajo del header */
-.dropdown-menu {
+/* Menú desplegable secundario */
+.nav-secondary {
     background-color: #043e6dd0;
-    color: white;
-    padding: 10px 20px;
-    position: relative;
-    display: flex;
-    justify-content: left;
 }
-
-.dropdown-menu ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 20px;
-}
-
-.dropdown-menu ul li {
-    position: relative;
-}
-
-.dropdown-menu ul li ul {
-    position: flex;
-    display: none;
-}
-
-.dropdown-menu ul li a {
-    text-decoration: none;
-    color: white;
+.nav-secondary .nav-link {
+    color: white; 
     font-size: 16px;
-    padding: 5px 10px;
 }
-
-.dropdown-menu ul li:hover > .submenu {
-    display: block;
+.nav-secondary .nav-link:hover,
+.nav-secondary .nav-link:focus {
+    color: #ddd; 
 }
-
-.submenu {
-    display: none;
-    position: absolute;
-    top: 100%; /* Justo debajo del enlace principal */
-    left: 0;
-    background-color: #444;
-    padding: 10px 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+.nav-secondary .nav-pills .nav-link.active, 
+.nav-secondary .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #032e50d0;
 }
-
-.submenu li {
-    margin: 0;
-    padding: 0;
+.nav-secondary .dropdown-menu {
+    background-color: #444; 
+    border: none; 
 }
-
-.submenu li a {
-    display: block;
-    padding: 5px 15px;
+.nav-secondary .dropdown-item {
     color: white;
     font-size: 14px;
-    white-space: nowrap;
 }
-
-.submenu li a:hover {
+.nav-secondary .dropdown-item:hover,
+.nav-secondary .dropdown-item:focus {
+    background-color: #555;
+    color: #ff6347; 
+}
+.nav-secondary .dropdown-item.active, 
+.nav-secondary .dropdown-item:active { 
     background-color: #555;
     color: #ff6347;
-}
-/* Contenido */
-#content {
-    display:flex;
-    justify-content:space-between;
-    margin-top: 20px;
-}
-
-
-
-/*Columna izquierda */
-#central-block {
-    padding-left: 20px;
-    padding-right: 20px;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 75%;
-    margin-bottom: 20px;
-}
-
-#central-block #contact-form {
-    margin-top: 20px;
-}
-
-#central-block h2 {
-    text-align: center;
-    font-size: 1.5em;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-#central-block article {
-    margin-bottom: 15px;
-    padding: 10px;
-    border-bottom: 1px solid #ccc;
-}
-
-#central-block article h3 {
-    margin: 0 0 5px 0;
-    font-size: 1.2em;
-}
-
-#central-block article p {
-    margin: 0;
-    color: #000000;
-    font-size: 18px;
-    text-align: center;
-}
-
-#central-block > p { /* Selector para el párrafo directamente hijo de #central-block (el introductorio) */
-    margin-bottom: 25px;
-    line-height: 1.6;
-    color: #333; /* Un poco más oscuro que el #555 que propuse antes, para mayor contraste */
-    text-align: center; 
-    font-size: 1.1em; /* Ligeramente más grande para destacar */
-}
-
-#contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 18px; /* Espacio entre grupos de formulario, un poco más generoso */
-}
-
-.form-group {
-    display: flex;
-    flex-direction: column;
-}
-
-.form-group label {
-    margin-bottom: 6px;
     font-weight: bold;
-    color: #222; /* Un poco más oscuro para las etiquetas */
-    font-size: 0.95em;
 }
 
-.form-group input[type="text"],
-.form-group input[type="email"],
-.form-group textarea {
-    width: 100%;
-    padding: 12px 15px; /* Un poco más de padding */
-    border: 1px solid #ccc; /* Borde similar al de #central-block pero más sutil */
-    border-radius: 6px; /* Coherente con el border-radius de #central-block */
-    font-size: 1rem;
-    font-family: Arial, sans-serif; /* Asegurar la fuente */
-    box-sizing: border-box; 
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.form-group input[type="text"]:focus,
-.form-group input[type="email"]:focus,
-.form-group textarea:focus {
-    border-color: #ff6347; /* Color de hover de tus enlaces, para consistencia */
-    outline: none; 
-    box-shadow: 0 0 5px rgba(255, 99, 71, 0.5); /* Sombra sutil con el color de acento */
-}
-
-.form-group textarea {
-    resize: vertical; 
-    min-height: 140px; /* Un poco más alto */
-}
-
-.form-group input[type="checkbox"] {
-    width: auto; 
-    margin-right: 10px;
-    vertical-align: middle; 
-    transform: scale(1.1); /* Hacer el checkbox un poco más grande */
-}
-
-.form-group label.inline-label {
-    font-weight: normal;
-    display: inline; 
-    vertical-align: middle;
+/* Título principal de la Página */
+.page-title { 
     color: #333;
-    font-size: 0.9em;
-}
-.form-group label.inline-label a { /* Si añades un enlace a la política de privacidad */
-    color: #ff6347;
-    text-decoration: none;
-}
-.form-group label.inline-label a:hover {
-    text-decoration: underline;
+    font-weight: 300; /* O el peso que prefieras */
 }
 
-.form-group-checkbox {
-    flex-direction: row !important; /* ¡Importante! Cambia la dirección a fila */
-    align-items: center;          /* Alinea verticalmente el checkbox y el texto */
-    justify-content: flex-start;  /* Alinea el grupo al inicio (izquierda). Puedes cambiar a 'center' si quieres centrar el grupo completo */
-    margin-top: 10px;             /* Un pequeño margen superior para separarlo del campo anterior */
-    margin-bottom: 10px;          /* Un pequeño margen inferior para separarlo del botón */
+/* Bloque central (formulario de contacto) */
+#central-block {
+    background-color: #f9f9f9; 
+    border: 1px solid #ddd;
+    border-radius: 0.375rem; /* Radio de borde estándar de Bootstrap */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem; /* p-4 de Bootstrap */
+}
+
+#central-block .text-content-block p {
+    font-size: 1.05rem; /* Un poco más grande */
+    line-height: 1.7;   /* Más interlineado */
+    margin-bottom: 1.25rem; /* Más espacio entre párrafos */
+    text-align: justify; /* O 'left', si prefieres */
 }
 
 
-.submit-btn {
-    background-color: #ff6347; /* Usar el color de acento de tu web */
+#central-block > .lead { /* Párrafo introductorio */
+    color: #495057; /* Color de texto lead de Bootstrap */
+    font-size: 1.15rem;
+}
+
+/* Estilos para el formulario de contacto coherentes con Bootstrap y tu paleta */
+#contact-form .form-label {
+    font-weight: bold;
+    color: #212529; /* Color de texto oscuro de Bootstrap */
+}
+
+#contact-form .form-control {
+    border-radius: 0.375rem; /* Coherente con otros radios */
+    padding: 0.75rem 1rem; /* Padding generoso */
+}
+
+#contact-form .form-control:focus {
+    border-color: #ff9a85; /* Un tono más claro de tu color de acento para el borde en focus */
+    box-shadow: 0 0 0 0.25rem rgba(255, 99, 71, 0.25); /* Sombra de Bootstrap con tu color de acento */
+}
+
+#contact-form .form-check-input:checked {
+    background-color: #ff6347; /* Color de acento para el checkbox */
+    border-color: #ff6347;
+}
+#contact-form .form-check-input:focus {
+    box-shadow: 0 0 0 0.25rem rgba(255, 99, 71, 0.25);
+}
+
+/* Botón de envío personalizado */
+.btn-submit-custom {
+    background-color: #ff6347;
+    border-color: #ff6347;
     color: white;
-    padding: 12px 25px;
-    border: none;
-    border-radius: 6px; /* Coherente con otros border-radius */
+    padding: 0.6rem 1.5rem; /* Padding del botón */
     font-size: 1.1rem;
     font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    align-self: center; 
-    margin-top: 15px; 
+    border-radius: 0.375rem;
+    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, transform 0.15s ease-in-out;
 }
 
-.submit-btn:hover {
-    background-color: #e0523a; /* Un tono más oscuro de #ff6347 para el hover */
-    transform: translateY(-2px); /* Pequeño efecto al pasar el mouse */
+.btn-submit-custom:hover {
+    background-color: #e0523a; /* Tono más oscuro para hover */
+    border-color: #d34830;
+    color: white;
+    transform: translateY(-1px);
 }
-
-.submit-btn:active {
-    transform: translateY(0px); /* Efecto al hacer clic */
-}
-
-header nav .menu li a.active {
-    color: #ff6347; /* Color de acento */
-    font-weight: bold;
-}
-
-.dropdown-menu .submenu li a.active {
-    color: #ff6347; 
-    background-color: #555; 
+.btn-submit-custom:active {
+    background-color: #c04028; /* Tono aún más oscuro para active */
+    border-color: #b03820;
+    transform: translateY(0);
 }
 
 
-/* Columna derecha - Aside */
-aside {
-    width: 25%;
-    padding-left: 20px;
+/* Widgets en la columna derecha */
+.widget.card .card-header {
+    background-color: #f8f9fa; 
+}
+.widget.card .card-header h3 {
+    color: #333; 
+}
+.widget.card .card-body {
+    padding: 1rem; 
 }
 
-.widget {
-    background-color: #fff;
-    padding: 15px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.widget h3 {
-    color: #333;
-}
 
 /* Pie de página */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-}
-
-footer h2 {
-    margin-bottom: 15px;
-}
-
-footer ul {
-    list-style: none;
-    margin-bottom: 15px;
-}
-
-footer ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-footer ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-footer ul li a:hover {
-    text-decoration: underline;
+footer a:hover {
+    text-decoration: underline; 
+    color: #ff6347 !important; 
 }
 
 /* Responsividad */
-@media (max-width: 768px) {
-    #content {
-        flex-direction: column;
-    }
-
-    #central-block > p { /* Párrafo introductorio del formulario */
-        font-size: 1em;
-    }
-
-    .submit-btn {
+@media (max-width: 991.98px) {
+    .navbar-brand h1.h2 { 
+        font-size: 1.25rem; 
+        text-align: center;
         width: 100%; 
     }
-
-    .form-group input[type="text"],
-    .form-group input[type="email"],
-    .form-group textarea {
-        padding: 10px 12px;
+}
+@media (max-width: 767.98px) {
+    #central-block > .lead {
+        font-size: 1rem;
     }
-
-    #asignaturas, article, aside {
-        width: 100%;
-        padding-right: 0;
-        padding-left: 0;
-    }
-
-    nav {
-        float: none;
-        text-align: center;
-        margin-top: 10px;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 10px 0;
+    .btn-submit-custom {
+        width: 100%; /* Botón de ancho completo en móviles */
     }
 }

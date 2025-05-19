@@ -1,330 +1,193 @@
-/* Reset básico */
-/* Estilos generales */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* css/estilosTemas.css */
 
+/* Estilos generales (copiado de estilosTemario.css) */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
 }
 
-/* Contenedor principal */
-.container {
-    width: 100%;
-    margin: 0 auto;
+.container,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl,
+.container-xxl {
+    max-width: 90%;
 }
 
-/* Estilo general para el header */
-header {
-    display: flex; /* Usamos Flexbox para dividir el espacio */
-    justify-content: space-between; /* Distribuye el espacio entre los elementos */
-    align-items: center; /* Alinea verticalmente los elementos al centro */
-    padding: 10px 10px; /* Espaciado alrededor del header */
-    background-color: rgb(7, 7, 7); /* Fondo oscuro (puedes cambiarlo según el diseño) */
-    color: white; /* Color de texto */
-}
-
-/* Contenedor interno para el header */
-header .container {
-    display: flex; /* Distribuye los elementos dentro del contenedor */
-    width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
-    align-items: center; /* Centra verticalmente los elementos dentro del contenedor */
-}
-
-/* Estilo del logo */
-header .logo img {
-    width: 80px; /* Ajusta el tamaño del logo */
-    height: auto;
-}
-
-/* Estilo del título */
-header .title {
-    flex-grow: 1; /* Hace que el título ocupe el espacio restante entre el logo y la navegación */
-    text-align: center; /* Centra el texto */
-}
-
-/* Estilo del menú de navegación */
-nav {
-    display: flex; /* Usa Flexbox para los elementos del menú */
-}
-
-nav ul {
-    list-style: none; /* Elimina los puntos de lista */
-    padding: 0;
-    margin: 0;
-    display: flex; /* Los elementos del menú estarán en una línea */
-}
-
-nav ul li {
-    margin: 0 15px; /* Espaciado entre los elementos del menú */
-}
-
-nav ul li a {
-    text-decoration: none; /* Elimina el subrayado de los enlaces */
-    color: white; /* Color de los enlaces */
-    font-size: 16px; /* Tamaño de la fuente */
-}
-
-nav ul li a:hover {
-    color: #ff6347; /* Color al pasar el mouse sobre los enlaces */
-}
-
-
-
-/* Menú desplegable debajo del header */
-.dropdown-menu {
-    background-color: #043e6dd0;
-    color: white;
-    padding: 10px 20px;
-    position: relative;
-    display: flex;
-    justify-content: left;
-}
-
-.dropdown-menu ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 20px;
-}
-
-.dropdown-menu ul li {
-    position: relative;
-}
-
-.dropdown-menu ul li ul {
-    position: flex;
-    display: none;
-}
-
-.dropdown-menu ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
-    padding: 5px 10px;
-}
-
-.dropdown-menu ul li:hover > .submenu {
-    display: block;
-}
-
-.submenu {
-    display: none;
-    position: absolute;
-    top: 100%; /* Justo debajo del enlace principal */
-    left: 0;
-    background-color: #444;
-    padding: 10px 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-}
-
-.submenu li {
-    margin: 0;
-    padding: 0;
-}
-
-.submenu li a {
-    display: block;
-    padding: 5px 15px;
-    color: white;
-    font-size: 14px;
-    white-space: nowrap;
-}
-
-.submenu li a:hover {
-    background-color: #555;
+/* Header Principal (copiado de estilosTemario.css) */
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
     color: #ff6347;
 }
-/* Contenido */
-#content {
-    display:flex;
-    justify-content:space-between;
-    margin-top: 20px;
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #ff6347;
 }
+header .h2 { font-size: 1.75rem; color: white; }
 
-/*Estilo titulo de asignatua*/
-main h2{
-    padding-left: 1.2em;
-}
+/* Menú desplegable secundario (copiado de estilosTemario.css) */
+.nav-secondary { background-color: #043e6dd0; }
+.nav-secondary .nav-link { color: white; font-size: 16px; }
+.nav-secondary .nav-link:hover, .nav-secondary .nav-link:focus { color: #ddd; }
+.nav-secondary .nav-pills .nav-link.active, 
+.nav-secondary .nav-pills .show > .nav-link { color: #fff; background-color: #032e50d0; }
+.nav-secondary .dropdown-menu { background-color: #444; border: none; }
+.nav-secondary .dropdown-item { color: white; font-size: 14px; }
+.nav-secondary .dropdown-item:hover, .nav-secondary .dropdown-item:focus { background-color: #555; color: #ff6347; }
+.nav-secondary .dropdown-item.active, .nav-secondary .dropdown-item:active { background-color: #555; color: #ff6347; font-weight: bold; }
 
-/*Columna izquierda */
+/* Título principal de la Página (copiado de estilosTemario.css) */
+.page-title { color: #333; font-weight: 300; }
+
+/* Bloque central (copiado y adaptado de estilosTemario.css) */
 #central-block {
-    padding-left: 20px;
-    padding-right: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
+    background-color: #f9f9f9; 
+    border: 1px solid #ddd;
+    border-radius: 0.375rem; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 75%;
-    margin-bottom: 20px;
+    padding: 1.5rem; 
+}
+#central-block > h2 { color: #333; } /* Título del bloque si lo hubiera */
+
+/* --- ESTILOS PARA EL ÍNDICE INTERNO DE TEMAS (similar a estilosTemario.css) --- */
+#indice-interno-temas .nav-link.temario-link {
+    color: #0d6efd;
+    padding: 0.5rem 1rem;
+    border: 1px solid transparent;
+    margin-bottom: 0.25rem;
+    border-radius: 0.25rem;
+    font-weight: 500;
+}
+#indice-interno-temas .nav-link.temario-link:hover,
+#indice-interno-temas .nav-link.temario-link:focus {
+    color: #0a58ca;
+    background-color: #e9ecef;
+    border-color: #dee2e6;
+}
+#indice-interno-temas .nav-link.temario-link.active {
+    color: #fff;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
 }
 
-#central-block h2 {
-    text-align: center;
-    font-size: 1.5em;
-    margin-bottom: 20px;
-    color: #333;
+/* --- ESTILOS ESPECÍFICOS PARA EL CONTENIDO DE LOS PROPUESTOS --- */
+#contenido-propuestos {
+    padding-left: 1.5rem; /* Espacio respecto al índice interno */
 }
 
-#central-block #temario{
-    position: relative;
-}
-
-#indice{
-    display:block;
-    width: 20%;
-    float: left;
-    font-weight: bold;
-    text-decoration: none;
-    color: black;
-}
-
-#indice a{
-    color: black;
-    font-size: larger;
-}
-
-#indice a:hover{
-    background-color:darkslateblue;
-    color: #ddd;
-}
-
-#contenido{
-    display: block;
-    float: right;
-    width: 80%;
-    font-weight: bold;
-    font-size: large;
-}
-
-#contenido iframe{
-    width: 98%;
-    margin: 1em;
-}
-
-.xml-bruto{
-    display: block;             /* Asegura que ocupe su propio bloque */
-    border: 1px solid #666;     /* Borde sólido para el marco */
-    background-color: #fdfdfd; /* Fondo ligeramente distinto (opcional) */
-    padding: 10px 15px;         /* Espaciado interno */
-    max-height: 400px;          /* Altura máxima antes de mostrar scrollbars */
-    overflow: auto;             /* Muestra scrollbars (vertical/horizontal) SI el contenido es más grande */
-    white-space: pre;           /* Mantiene espacios/saltos de línea, NO ajusta líneas largas */
-    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace; /* Fuente monoespaciada */
-    font-size: 0.4em;          /* Tamaño de fuente (ajusta a tu gusto) */
-    color: #333;                /* Color del texto */
-    border-radius: 4px;         /* Bordes redondeados (opcional) */
-    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
-    max-width:90%;
-}
-
-.div-xml{
-    max-width: 90%; /* Que el marco no sea más ancho que el 90% del contenedor padre */
-    margin: 1em auto; 
-}
-
-.div-tema5{
-    width: 100%;
-}
-
-#paginascontenidas{
-    height: 500px;
-}
-
-/* Columna derecha - Aside */
-aside {
-    width: 25%;
-    padding-left: 20px;
-}
-
-.widget {
+.propuesto-item {
+    border: 1px solid #e0e0e0;
+    padding: 1rem;
+    border-radius: 0.375rem;
     background-color: #fff;
-    padding: 15px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.widget h3 {
+.propuesto-item .h6 { /* Título "Propuesto X.Y" */
+    margin-bottom: 0.75rem;
     color: #333;
+    font-weight: bold;
 }
 
-/* Pie de página */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
+.iframe-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    /* Por defecto, altura para la mayoría de iframes, se puede ajustar */
+    /* Bootstrap usa padding-top para ratios, pero para alturas fijas es más simple así */
+    height: 350px; 
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
 }
 
-footer h2 {
-    margin-bottom: 15px;
+
+.iframe-pdf-viewer {
+    height: 600px; /* O una altura más adecuada para PDFs */
 }
 
-footer ul {
-    list-style: none;
-    margin-bottom: 15px;
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: none; /* Quitar borde del iframe si el contenedor ya lo tiene */
 }
 
-footer ul li {
-    display: inline;
-    margin: 0 10px;
+/* Para el iframe más alto (el de Propuesto 2.9 con id="paginascontenidas") */
+.iframe-container-taller {
+    height: 500px; /* Altura específica para este iframe */
+}
+#paginascontenidas { /* Si necesitas un estilo específico para este ID */
+    /* Ya debería tomar el 100% de alto de su .iframe-container-taller */
 }
 
-footer ul li a {
-    color: white;
-    text-decoration: none;
+
+/* --- ESTILOS PARA BLOQUES DE CÓDIGO XML/BRUTO (adaptados de tu CSS original) --- */
+.div-xml { /* Contenedor para los bloques de código XML */
+    max-width: 100%; /* Que ocupe el ancho disponible en su columna */
+    margin: 1.5em auto; 
 }
 
-footer ul li a:hover {
-    text-decoration: underline;
+.xml-bruto, .lenguaje-xml {
+    display: block;
+    border: 1px solid #ccc;
+    background-color: #f8f9fa; /* Color de fondo suave de Bootstrap */
+    padding: 1rem;
+    max-height: 400px; /* Altura máxima antes de scroll */
+    overflow: auto;    /* Scroll si es necesario */
+    white-space: pre;  /* Mantiene espacios y saltos, no ajusta líneas */
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    font-size: 0.85em;  /* Ajustado ligeramente para mejor legibilidad que 0.4em u 8px */
+    color: #212529;     /* Color de texto oscuro de Bootstrap */
+    border-radius: 0.25rem;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.075);
 }
 
-.lenguaje-xml {
-    display: block; /* Asegura que ocupe su propio espacio */
-    background-color: #f8f8f8; /* Un fondo gris claro */
-    border: 1px solid #ddd;     /* Un borde sutil */
-    padding: 15px;              /* Espacio interior */
-    border-radius: 5px;         /* Bordes redondeados */
-    overflow-x: auto;           /* Scroll horizontal si el código es muy largo */
-    white-space: pre;           /* Mantiene espacios y saltos de línea, pero no ajusta líneas largas */
-    /* white-space: pre-wrap; */ /* Alternativa: Mantiene espacios y ajusta líneas largas */
-    word-wrap: break-word;      /* Ayuda a ajustar palabras largas (si usas pre-wrap) */
-    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace; /* Fuente monoespaciada */
-    font-size: 8px;           /* Tamaño de fuente ligeramente menor */
-    color: #333;                /* Color del texto */
-}
-
-/* Estilo opcional si el texto de carga/error aparece */
+/* Estilo opcional si el texto de carga/error aparece (mantenido) */
 .lenguaje-xml:empty::before {
-     content: "Cargando..."; /* Texto si está vacío inicialmente */
+     content: "Cargando..."; 
      color: #888;
 }
 
-/* Responsividad */
-@media (max-width: 768px) {
-    #content {
-        flex-direction: column;
-    }
 
-    #asignaturas, article, aside {
-        width: 100%;
-        padding-right: 0;
-        padding-left: 0;
-    }
+/* Widgets en la columna derecha (copiado de estilosTemario.css) */
+.widget.card .card-header { background-color: #f8f9fa; }
+.widget.card .card-header h3 { color: #333; }
+.widget.card .card-body { padding: 1rem; }
 
-    nav {
-        float: none;
-        text-align: center;
-        margin-top: 10px;
-    }
+/* Pie de página (copiado de estilosTemario.css) */
+footer a:hover { text-decoration: underline; color: #ff6347 !important; }
 
-    nav ul li {
-        display: block;
-        margin: 10px 0;
+/* Responsividad (adaptado) */
+@media (max-width: 991.98px) { /* Navbar collapse */
+    .navbar-brand h1.h2 { font-size: 1.25rem; text-align: center; width: 100%; }
+}
+
+@media (max-width: 767.98px) { /* md breakpoint, donde el índice y contenido se apilan */
+    #indice-interno-temas {
+        margin-bottom: 1.5rem; /* Espacio entre el índice y la lista de propuestos en móvil */
+    }
+    #contenido-propuestos {
+        padding-left: 0; /* Sin padding extra en móvil */
     }
 }
+
+/* css/estilosTemas.css */
+
+/* ... (todos los estilos anteriores) ... */
+
+/* --- ESTILOS ESPECÍFICOS PARA EL IFRAME DE LA FACTURA (Propuesto 3.3) --- */
+
+.propuesto-factura .iframe-factura-container {
+    /* Define la altura del 'marco' visible para la factura escalada.
+       Ajusta esta altura según cuánto espacio vertical quieras darle. */
+    height: 450px; /* <<-- AJUSTA ESTA ALTURA DEL MARCO VISIBLE */
+    overflow: hidden; /* Crucial para recortar el iframe más grande que será escalado */
+    position: relative; /* Útil si necesitas posicionar elementos absolutamente dentro, aunque no estrictamente para scale */
+    border: 1px solid #ccc; /* Mantenemos el borde del contenedor */
+    /* width: 100%; ya viene de .iframe-container si no lo quitas */
+}
+

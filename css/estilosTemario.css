@@ -1,259 +1,164 @@
-/* Reset básico */
-/* Estilos generales */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* css/estilosTemario.css */
 
+/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
 }
 
-/* Contenedor principal */
-.container {
-    width: 100%;
-    margin: 0 auto;
+/* Ajustar el ancho máximo del contenedor principal de Bootstrap al 90% */
+.container,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl,
+.container-xxl {
+    max-width: 90%;
 }
 
-/* Estilo general para el header */
-header {
-    display: flex; /* Usamos Flexbox para dividir el espacio */
-    justify-content: space-between; /* Distribuye el espacio entre los elementos */
-    align-items: center; /* Alinea verticalmente los elementos al centro */
-    padding: 10px 10px; /* Espaciado alrededor del header */
-    background-color: rgb(7, 7, 7); /* Fondo oscuro (puedes cambiarlo según el diseño) */
-    color: white; /* Color de texto */
-}
-
-/* Contenedor interno para el header */
-header .container {
-    display: flex; /* Distribuye los elementos dentro del contenedor */
-    width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
-    align-items: center; /* Centra verticalmente los elementos dentro del contenedor */
-}
-
-/* Estilo del logo */
-header .logo img {
-    width: 80px; /* Ajusta el tamaño del logo */
-    height: auto;
-}
-
-/* Estilo del título */
-header .title {
-    flex-grow: 1; /* Hace que el título ocupe el espacio restante entre el logo y la navegación */
-    text-align: center; /* Centra el texto */
-}
-
-/* Estilo del menú de navegación */
-nav {
-    display: flex; /* Usa Flexbox para los elementos del menú */
-}
-
-nav ul {
-    list-style: none; /* Elimina los puntos de lista */
-    padding: 0;
-    margin: 0;
-    display: flex; /* Los elementos del menú estarán en una línea */
-}
-
-nav ul li {
-    margin: 0 15px; /* Espaciado entre los elementos del menú */
-}
-
-nav ul li a {
-    text-decoration: none; /* Elimina el subrayado de los enlaces */
-    color: white; /* Color de los enlaces */
-    font-size: 16px; /* Tamaño de la fuente */
-}
-
-nav ul li a:hover {
-    color: #ff6347; /* Color al pasar el mouse sobre los enlaces */
-}
-
-
-
-/* Menú desplegable debajo del header */
-.dropdown-menu {
-    background-color: #043e6dd0;
-    color: white;
-    padding: 10px 20px;
-    position: relative;
-    display: flex;
-    justify-content: left;
-}
-
-.dropdown-menu ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 20px;
-}
-
-.dropdown-menu ul li {
-    position: relative;
-}
-
-.dropdown-menu ul li ul {
-    position: flex;
-    display: none;
-}
-
-.dropdown-menu ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
-    padding: 5px 10px;
-}
-
-.dropdown-menu ul li:hover > .submenu {
-    display: block;
-}
-
-.submenu {
-    display: none;
-    position: absolute;
-    top: 100%; /* Justo debajo del enlace principal */
-    left: 0;
-    background-color: #444;
-    padding: 10px 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-}
-
-.submenu li {
-    margin: 0;
-    padding: 0;
-}
-
-.submenu li a {
-    display: block;
-    padding: 5px 15px;
-    color: white;
-    font-size: 14px;
-    white-space: nowrap;
-}
-
-.submenu li a:hover {
-    background-color: #555;
+/* Header Principal (copiado de estilosAsignatura.css) */
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
     color: #ff6347;
 }
-/* Contenido */
-#content {
-    display:flex;
-    justify-content:space-between;
-    margin-top: 20px;
+
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #ff6347;
 }
 
-/*Estilo titulo de asignatua*/
-main h2{
-    padding-left: 1.2em;
+header .h2 { 
+    font-size: 1.75rem; 
+    color: white;
 }
 
-/*Columna izquierda */
+/* Menú desplegable secundario (copiado de estilosAsignatura.css) */
+.nav-secondary {
+    background-color: #043e6dd0;
+}
+
+.nav-secondary .nav-link {
+    color: white; 
+    font-size: 16px;
+}
+
+.nav-secondary .nav-link:hover,
+.nav-secondary .nav-link:focus {
+    color: #ddd; 
+}
+
+.nav-secondary .nav-pills .nav-link.active, 
+.nav-secondary .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #032e50d0;
+}
+
+.nav-secondary .dropdown-menu {
+    background-color: #444; 
+    border: none; 
+}
+
+.nav-secondary .dropdown-item {
+    color: white;
+    font-size: 14px;
+}
+
+.nav-secondary .dropdown-item:hover,
+.nav-secondary .dropdown-item:focus {
+    background-color: #555;
+    color: #ff6347; 
+}
+
+.nav-secondary .dropdown-item.active, 
+.nav-secondary .dropdown-item:active { 
+    background-color: #555;
+    color: #ff6347;
+    font-weight: bold;
+}
+
+/* Título principal de la Página (copiado de estilosAsignatura.css) */
+.page-title { 
+    color: #333;
+    font-weight: 300;
+}
+
+/* Bloque central (copiado y adaptado de estilosAsignatura.css) */
 #central-block {
-    padding-left: 20px;
-    padding-right: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
+    background-color: #f9f9f9; 
+    border: 1px solid #ddd;
+    border-radius: 0.375rem; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 75%;
-    margin-bottom: 20px;
+    padding: 1.5rem; 
 }
 
-#central-block h2 {
-    text-align: center;
-    font-size: 1.5em;
-    margin-bottom: 20px;
+#central-block > h2 { /* "Índice de Temas" */
     color: #333;
 }
 
-#central-block #temario{
-    position: relative;
+/* --- ESTILOS ESPECÍFICOS PARA LA PÁGINA DE TEMARIO --- */
+.temario-container {
+    margin-top: 1.5rem; /* Espacio después del título "Índice de Temas" */
 }
 
-#indice{
-    display:block;
-    width: 20%;
-    float: left;
+#indice-temas .nav-link.temario-link {
+    color: #0d6efd; /* Color azul estándar de Bootstrap para enlaces */
+    padding: 0.5rem 1rem;
+    border: 1px solid transparent; /* Para alineación con :hover */
+    margin-bottom: 0.25rem; /* Pequeño espacio entre enlaces */
+    border-radius: 0.25rem;
+    font-weight: 500;
 }
 
-#contenido{
-    display: block;
-    float: center;
+#indice-temas .nav-link.temario-link:hover,
+#indice-temas .nav-link.temario-link:focus {
+    color: #0a58ca;
+    background-color: #e9ecef; /* Fondo suave al pasar el ratón */
+    border-color: #dee2e6;
 }
 
-/* Columna derecha - Aside */
-aside {
-    width: 25%;
-    padding-left: 20px;
+/* Si quieres marcar un tema activo en el índice (requeriría JS o clase manual) */
+#indice-temas .nav-link.temario-link.active {
+    color: #fff;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
 }
 
-.widget {
-    background-color: #fff;
-    padding: 15px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+#contenido-tema {
+    padding: 1rem;
+    background-color: #fff; /* Fondo blanco para el área de contenido del tema */
+    border: 1px solid #dee2e6;
+    border-radius: 0.375rem;
+    min-height: 200px; /* Altura mínima para que se vea el área */
+}
+/* --- FIN ESTILOS ESPECÍFICOS PARA TEMARIO --- */
+
+
+/* Widgets en la columna derecha (copiado de estilosAsignatura.css) */
+.widget.card .card-header {
+    background-color: #f8f9fa; 
+}
+.widget.card .card-header h3 {
+    color: #333; 
+}
+.widget.card .card-body {
+    padding: 1rem; 
 }
 
-.widget h3 {
-    color: #333;
+
+/* Pie de página (copiado de estilosAsignatura.css) */
+footer a:hover {
+    text-decoration: underline; 
+    color: #ff6347 !important; 
 }
 
-/* Pie de página */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-}
-
-footer h2 {
-    margin-bottom: 15px;
-}
-
-footer ul {
-    list-style: none;
-    margin-bottom: 15px;
-}
-
-footer ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-footer ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-footer ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Responsividad */
-@media (max-width: 768px) {
-    #content {
-        flex-direction: column;
-    }
-
-    #asignaturas, article, aside {
-        width: 100%;
-        padding-right: 0;
-        padding-left: 0;
-    }
-
-    nav {
-        float: none;
+/* Responsividad (copiado de estilosAsignatura.css) */
+@media (max-width: 991.98px) {
+    .navbar-brand h1.h2 { 
+        font-size: 1.25rem; 
         text-align: center;
-        margin-top: 10px;
+        width: 100%; 
     }
-
-    nav ul li {
-        display: block;
-        margin: 10px 0;
+    #indice-temas {
+        margin-bottom: 1rem; /* Espacio entre índice y contenido en móvil */
     }
 }

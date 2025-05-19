@@ -14,135 +14,143 @@
                                 bases de datos, programación, administración de servidores" />
     <meta name="date" content="18-10-2024" />
 
+    <title>Rhopository - Proyectos</title>
 
-    <title>Rhopository</title>
-
-    <link rel="stylesheet" href="css/estilosAsignatura.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="css/estilosAsignatura.css"> <!-- Usamos el CSS de asignatura -->
     <link rel="shortcut icon" href="imagenes/favicon.jpg">
 
 </head>
 <body>
 
-    <!-- Header con navegación -->
+    <!-- Header con navegación principal -->
     <header>
-        <div class="container">
-            <!-- Logo a la izquierda -->
-            <div class="logo">
-                <a href="index.html">
-                    <img src="imagenes/logoRho.jpg" alt="Logotipo" />
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(7, 7, 7);">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="imagenes/logoRho.jpg" alt="Logotipo" style="width: 70px; height: auto;">
                 </a>
+        
+                <div class="mx-auto d-none d-lg-block">
+                    <a href="index.html" class="text-white text-decoration-none">
+                        <h1 class="mb-0 h2">Rhopository</h1>
+                    </a>
+                </div>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbarCollapse" aria-controls="mainNavbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <div class="collapse navbar-collapse" id="mainNavbarCollapse" style="flex-grow: 0;">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">Rho</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cv/CVRho.html">CV</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="proyectos.html">Proyectos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
+                    </ul>
+                </div>
             </div>
-            
-            <!-- Título en el centro -->
-            <div class="title">
-                <h1>Rhopository</h1>
-            </div>
-            
-            <!-- Menú de navegación a la derecha -->
-            <nav>
-                <ul class="menu">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="about.html">Rho</a></li>
-                    <li><a href="cv/CVRho.html">CV</a></li>
-                    <li><a href="proyectos.html">Proyectos</a></li>
-                    <li><a href="contact.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
+        </nav>
     </header>
 
-    <!-- Nuevo menú desplegable -->
-    <div class="dropdown-menu">
-        <ul>
-            <li>
-                <a href="#">Asignaturas</a>
-                <ul class="submenu">
-                    <li><a href="asignaturas/LM/LM.html">Lenguaje de Marcas</a></li>
-                    <li><a href="/asignaturas/NUBE/NUBE.html">Computacion en la Nube</a></li>
-                    <li><a href="/asignaturas/PAR/PAR.html">Planificacion de Redes</a></li>
-                    <li><a href="/asignaturas/IPE/IPE.html">IPE1</a></li>
-                    <li><a href="/asignaturas/BBDD/BBDD.html">Bases de Datos</a></li>
-                    <li><a href="/asignaturas/HARDWARE/FH.html">Fundamentos de hardware</a></li>
-                    <li><a href="/asignaturas/ISO/ISO.html">Implantacion de sistemas operativos </a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">Apuntes</a>
-                <ul class="submenu">
-                    <li><a href="#">PDF</a></li>
-                    <li><a href="#">Podcast</a></li>
-                    <li><a href="#">Videos</a></li>
-                </ul>
-            </li>
-        </ul>
-    </div>
+    <!-- Menú desplegable secundario -->
+    <nav class="nav-secondary py-2">
+        <div class="container">
+            <ul class="nav nav-pills">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="asignaturasDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Asignaturas
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="asignaturasDropdown">
+                        <li><a class="dropdown-item" href="asignaturas/LM/LM.html">Lenguaje de Marcas</a></li>
+                        <li><a class="dropdown-item" href="asignaturas/NUBE/NUBE.html">Computacion en la Nube</a></li>
+                        <li><a class="dropdown-item" href="asignaturas/PAR/PAR.html">Planificacion de Redes</a></li>
+                        <li><a class="dropdown-item" href="asignaturas/IPE/IPE.html">IPE1</a></li>
+                        <li><a class="dropdown-item" href="asignaturas/BBDD/BBDD.html">Bases de Datos</a></li>
+                        <li><a class="dropdown-item" href="asignaturas/HARDWARE/FH.html">Fundamentos de hardware</a></li>
+                        <li><a class="dropdown-item" href="asignaturas/ISO/ISO.html">Implantacion de sistemas operativos</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="apuntesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Apuntes
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="apuntesDropdown">
+                        <li><a class="dropdown-item" href="#">PDF</a></li>
+                        <li><a class="dropdown-item" href="#">Podcast</a></li>
+                        <li><a class="dropdown-item" href="#">Videos</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
     
-        <!-- Contenido principal -->
-        <main>
-            <section id="content">
-
-                    <!-- Bloque central -->
-                    <div id="central-block">
-                        <h2>Evaluaciones</h2>
-                        
-                        <div class="evaluacion">
-                            <a href="Proyectos/LM/">Lenguaje de Marcas</a>
-                        </div>
-
-                        <div class="evaluacion">
-                            <a href="Proyectos/BBDD/">Bases de Datos</a>
-                        </div>
-
-                    </div>
-
+    <!-- Contenido principal -->
+    <main class="container mt-4">
+        <h1 class="mb-4 display-5 text-center page-title">Mis Proyectos</h1> <!-- Título de la página -->
         
-                <!-- Columna derecha: Widgets -->
-                <aside>
-                    <section class="widget">
-                        <h3>Pomodoro</h3>
-                        <iframe src="https://studywithme.io/aesthetic-pomodoro-timer/" 
-                                width="100%" 
-                                height="400" 
-                                frameborder="0" 
-                                scrolling="no" 
-                                title="Pomodoro Timer"></iframe>
-                    </section>
-                    <section class="widget">
-                        <h3>Calendario</h3>
-                        <iframe src="https://calendar.google.com/calendar/embed?src=es.spain%23holiday%40group.v.calendar.google.com&ctz=Europe%2FMadrid" 
-                                style="border: 0" 
-                                width="100%" 
-                                height="200" 
-                                frameborder="0" 
-                                scrolling="no"></iframe>
-                    </section>
-                    <section class="widget">
-                        <h3>Spotify</h3>
-                        <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DXcBWIGoYBM5M" 
-                                width="100%" 
-                                height="80" 
-                                frameborder="0" 
-                                allowtransparency="true" 
-                                allow="encrypted-media"></iframe>
-                    </section>
-                </aside>
+        <div class="row">
+            <!-- Bloque central -->
+            <section id="central-block" class="col-lg-8 mb-4"> <!-- Mantenemos el ID si el CSS lo usa, aunque el layout es por Bootstrap -->
+                <h2 class="h3 text-center mb-4">Proyectos por Asignatura</h2>
+                
+                <!-- Usaremos las mismas clases que para las evaluaciones en las páginas de asignatura -->
+                <div class="evaluacion-link-block"> 
+                    <a href="Proyectos/LM/" class="evaluacion-link">Lenguaje de Marcas</a>
+                </div>
+
+                <div class="evaluacion-link-block">
+                    <a href="Proyectos/BBDD/" class="evaluacion-link">Bases de Datos</a>
+                </div>
+                
+                <!-- Añade más bloques .evaluacion-link-block para otros proyectos/asignaturas si es necesario -->
+
             </section>
-        </main>
-        <!-- Pie de página -->
-        <footer>
-            <!-- Sección Contacto -->
-            <section id="contacto">
-                <h2>Contacto</h2>
+    
+            <!-- Columna derecha: Widgets -->
+            <aside class="col-lg-4">
+                <section class="widget card mb-3">
+                    <div class="card-header"><h3 class="h5 mb-0">Pomodoro</h3></div>
+                    <div class="card-body">
+                        <iframe src="https://studywithme.io/aesthetic-pomodoro-timer/" width="100%" height="400" frameborder="0" scrolling="no" title="Pomodoro Timer" class="w-100"></iframe>
+                    </div>
+                </section>
+                <section class="widget card mb-3">
+                    <div class="card-header"><h3 class="h5 mb-0">Calendario</h3></div>
+                    <div class="card-body">
+                        <iframe src="https://calendar.google.com/calendar/embed?src=es.spain%23holiday%40group.v.calendar.google.com&ctz=Europe%2FMadrid" style="border: 0" width="100%" height="200" frameborder="0" scrolling="no" class="w-100"></iframe>
+                    </div>
+                </section>
+                <section class="widget card mb-3">
+                    <div class="card-header"><h3 class="h5 mb-0">Spotify</h3></div>
+                    <div class="card-body">
+                        <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DXcBWIGoYBM5M" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media" class="w-100"></iframe>
+                    </div>
+                </section>
+            </aside>
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <section id="contacto-footer" class="mb-3"> <!-- ID cambiado para evitar duplicidad -->
+                <h2 class="h4">Contacto</h2>
                 <p>Envíame un mensaje o sigue mis redes sociales.</p>
-                <ul>
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">Twitter</a></li>
-                    <li><a href="#">LinkedIn</a></li>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="#" class="text-white">Instagram</a></li>
+                    <li class="list-inline-item"><a href="#" class="text-white">Twitter</a></li>
+                    <li class="list-inline-item"><a href="#" class="text-white">LinkedIn</a></li>
                 </ul>
             </section>
-            <p>© 2024-2025 Repositorio de Actividades. Todos los derechos reservados.</p>
-        </footer>
+            <p class="mb-0">© 2024-2025 Repositorio de Actividades. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 
-
-    </body>
+    <!-- Bootstrap JS Bundle (Popper.js included) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
 </html>
