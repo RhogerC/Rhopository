@@ -264,6 +264,14 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
+.form-group-checkbox {
+    flex-direction: row !important; /* ¡Importante! Cambia la dirección a fila */
+    align-items: center;          /* Alinea verticalmente el checkbox y el texto */
+    justify-content: flex-start;  /* Alinea el grupo al inicio (izquierda). Puedes cambiar a 'center' si quieres centrar el grupo completo */
+    margin-top: 10px;             /* Un pequeño margen superior para separarlo del campo anterior */
+    margin-bottom: 10px;          /* Un pequeño margen inferior para separarlo del botón */
+}
+
 
 .submit-btn {
     background-color: #ff6347; /* Usar el color de acento de tu web */
