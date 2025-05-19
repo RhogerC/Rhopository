@@ -45,7 +45,7 @@
                     <li><a href="about.html">Rho</a></li>
                     <li><a href="cv/CVRho.html">CV</a></li>
                     <li><a href="proyectos.html">Proyectos</a></li>
-                    <li><a href="contact.html">Contacto</a></li>
+                    <li><a href="contact.html" class="active">Contacto</a></li> <!-- Añadido class="active" para indicar página actual -->
                 </ul>
             </nav>
         </div>
@@ -83,18 +83,42 @@
 
                     <!-- Bloque central -->
                     <div id="central-block">
-                        <h2>Acerca de mi</h2>
-                        
-                        <article>
-                            <p>
-                                Hola bienvenido a mi pagina web, esto es un proyecto de la clase de Lenguaje de Marcas donde voy a ir creando un sitio web que contenga las actividades que ire realizando durante el curso de las distintas asigntaturas para que quien lo necesite pueda ver el progreso y que ejercicios se llevan a cabo en el ciclo de ASIR en el primer año...por ahora.
-                            </p>
-                            <p>
-                                Continuare desarollando la pagina hasta finalizar el ciclo
-                            </p>
-                        </article>
-                        
+                <h2>Ponte en Contacto</h2>
+                <p>Si tienes alguna pregunta, sugerencia o simplemente quieres saludar, ¡no dudes en rellenar el siguiente formulario!</p>
+                
+                <form id="contact-form" action="procesar_formulario.php" method="POST">
+                    <!-- El atributo 'action' debe apuntar al script del servidor que procesará los datos. 
+                         'procesar_formulario.php' es un ejemplo. Si solo es diseño, puedes usar action="#" -->
+
+                    <div class="form-group">
+                        <label for="name">Nombre Completo:</label>
+                        <input type="text" id="name" name="name" placeholder="Tu nombre y apellidos" required>
                     </div>
+
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" placeholder="tuemail@ejemplo.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Asunto:</label>
+                        <input type="text" id="subject" name="subject" placeholder="Asunto del mensaje">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Mensaje:</label>
+                        <textarea id="message" name="message" rows="6" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="checkbox" id="privacy" name="privacy" required>
+                        <label for="privacy" class="inline-label">Acepto la política de privacidad.</label> 
+                        <!-- Enlaza a tu política de privacidad si tienes una -->
+                    </div>
+
+                    <button type="submit" class="submit-btn">Enviar Mensaje</button>
+                </form>
+            </div>
 
         
                 <!-- Columna derecha: Widgets -->

@@ -161,6 +161,10 @@ nav ul li a:hover {
     margin-bottom: 20px;
 }
 
+#central-block #contact-form {
+    margin-top: 20px;
+}
+
 #central-block h2 {
     text-align: center;
     font-size: 1.5em;
@@ -186,8 +190,113 @@ nav ul li a:hover {
     text-align: center;
 }
 
+#central-block > p { /* Selector para el párrafo directamente hijo de #central-block (el introductorio) */
+    margin-bottom: 25px;
+    line-height: 1.6;
+    color: #333; /* Un poco más oscuro que el #555 que propuse antes, para mayor contraste */
+    text-align: center; 
+    font-size: 1.1em; /* Ligeramente más grande para destacar */
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px; /* Espacio entre grupos de formulario, un poco más generoso */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #222; /* Un poco más oscuro para las etiquetas */
+    font-size: 0.95em;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px; /* Un poco más de padding */
+    border: 1px solid #ccc; /* Borde similar al de #central-block pero más sutil */
+    border-radius: 6px; /* Coherente con el border-radius de #central-block */
+    font-size: 1rem;
+    font-family: Arial, sans-serif; /* Asegurar la fuente */
+    box-sizing: border-box; 
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group textarea:focus {
+    border-color: #ff6347; /* Color de hover de tus enlaces, para consistencia */
+    outline: none; 
+    box-shadow: 0 0 5px rgba(255, 99, 71, 0.5); /* Sombra sutil con el color de acento */
+}
+
+.form-group textarea {
+    resize: vertical; 
+    min-height: 140px; /* Un poco más alto */
+}
+
+.form-group input[type="checkbox"] {
+    width: auto; 
+    margin-right: 10px;
+    vertical-align: middle; 
+    transform: scale(1.1); /* Hacer el checkbox un poco más grande */
+}
+
+.form-group label.inline-label {
+    font-weight: normal;
+    display: inline; 
+    vertical-align: middle;
+    color: #333;
+    font-size: 0.9em;
+}
+.form-group label.inline-label a { /* Si añades un enlace a la política de privacidad */
+    color: #ff6347;
+    text-decoration: none;
+}
+.form-group label.inline-label a:hover {
+    text-decoration: underline;
+}
 
 
+.submit-btn {
+    background-color: #ff6347; /* Usar el color de acento de tu web */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px; /* Coherente con otros border-radius */
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    align-self: center; 
+    margin-top: 15px; 
+}
+
+.submit-btn:hover {
+    background-color: #e0523a; /* Un tono más oscuro de #ff6347 para el hover */
+    transform: translateY(-2px); /* Pequeño efecto al pasar el mouse */
+}
+
+.submit-btn:active {
+    transform: translateY(0px); /* Efecto al hacer clic */
+}
+
+header nav .menu li a.active {
+    color: #ff6347; /* Color de acento */
+    font-weight: bold;
+}
+
+.dropdown-menu .submenu li a.active {
+    color: #ff6347; 
+    background-color: #555; 
+}
 
 
 /* Columna derecha - Aside */
@@ -243,6 +352,20 @@ footer ul li a:hover {
 @media (max-width: 768px) {
     #content {
         flex-direction: column;
+    }
+
+    #central-block > p { /* Párrafo introductorio del formulario */
+        font-size: 1em;
+    }
+
+    .submit-btn {
+        width: 100%; 
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group textarea {
+        padding: 10px 12px;
     }
 
     #asignaturas, article, aside {
