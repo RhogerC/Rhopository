@@ -1,20 +1,43 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente un poco más moderna */
+    /*padding-top: 56px; Para compensar la navbar fija si la usas */
 }
-h1, h3 {
-    color: #343a40;
-}
-img, video {
+
+/* Si usas .sticky-top en la navbar, este padding-top en el body es necesario */
+/* Si no usas .sticky-top, puedes quitar el padding-top del body */
+
+
+/* Los h1, h3 ya toman colores de Bootstrap o de .text-primary, así que esto puede ser opcional */
+/* h1, h3 {
+    color: #343a40; 
+} */
+
+img, video { /* Si añades imágenes/vídeos en el futuro */
     max-height: 300px;
     border: 2px solid #ccc;
+    display: block; /* Para centrar con margin auto si es necesario */
+    margin-left: auto;
+    margin-right: auto;
 }
 
-
-#telefono{
-    font-weight: bold;
+/* Para asegurar que los detalles de educación tengan un estilo de lista normal */
+#edu1-details, #edu2-details {
+    padding-left: 1.5rem; /* Ajusta según sea necesario */
+    list-style-type: disc; /* O el que prefieras */
 }
 
+#edu1-details li, #edu2-details li {
+    padding-bottom: 0.25rem;
+}
+
+.card-header h3 {
+    font-size: 1.5rem; /* Un tamaño un poco más pequeño para los títulos de las cards */
+}
+
+/* #listahobbies ya no necesita CSS personalizado si usamos flex-wrap y justify-content-center en el HTML */
+/*
 #listahobbies{
     position: relative;
     display:inline-flex;
 }
+*/
