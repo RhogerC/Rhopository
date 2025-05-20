@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Proyecto de Base de Datos ASIR - Rhopository" />
+    <meta name="author" content="Rhommel Cardona" />
+    <meta name="keywords" content="SQL, Base de Datos, Proyecto, ASIR, Video, PDF, Rhompository" />
+    <meta name="date" content="18-10-2024" />
+
+    <title>Rhopository - Proyecto Base de Datos</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- RUTA CSS CORREGIDA ASUMIENDO QUE proyecto-bbdd.html está en /proyectos/ -->
+    <link rel="stylesheet" href="../../css/estilosAsignatura.css"> 
+    <link rel="shortcut icon" href="../../imagenes/favicon.jpg">
+    <style>
+        /* Estilos específicos para el contenido de esta página */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            margin-bottom: 2rem;
+            border-radius: 0.375rem;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .pdf-viewer-container {
+            width: 100%;
+            height: 700px; 
+            border: 1px solid #ccc;
+            border-radius: 0.375rem;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .pdf-viewer-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header con navegación principal -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(7, 7, 7);">
+            <div class="container">
+                <!-- RUTA CORREGIDA -->
+                <a class="navbar-brand" href="../../index.html"><img src="../../imagenes/logoRho.jpg" alt="Logotipo" style="width: 70px;"></a>
+                <!-- RUTA CORREGIDA -->
+                <div class="mx-auto d-none d-lg-block"><a href="../index.html" class="text-white text-decoration-none"><h1 class="mb-0 h2">Rhopository</h1></a></div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbarCollapse"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="mainNavbarCollapse" style="flex-grow: 0;">
+                    <ul class="navbar-nav ms-auto">
+                        <!-- RUTAS CORREGIDAS -->
+                        <li class="nav-item"><a class="nav-link" href="../../index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../about.html">Rho</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../cv/CVRho.html">CV</a></li>
+                        <!-- Asumiendo que tienes una página general de proyectos en la raíz -->
+                        <li class="nav-item"><a class="nav-link" href="../../proyectos.html">Proyectos</a></li> 
+                        <!-- Si esta página proyecto-bbdd.html es a la que debe enlazar el menú "Proyectos", 
+                             entonces el href sería "proyecto-bbdd.html" (o solo "#") y la clase active estaría aquí.
+                             Y el enlace general ../proyectos.html podría no existir o ser esta misma página. -->
+                        <li class="nav-item"><a class="nav-link" href="../../contact.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Menú desplegable secundario -->
+    <nav class="nav-secondary py-2">
+        <div class="container">
+            <ul class="nav nav-pills">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="asignaturasDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Asignaturas</a>
+                    <ul class="dropdown-menu" aria-labelledby="asignaturasDropdown">
+                        <!-- RUTAS CORREGIDAS -->
+                        <li><a class="dropdown-item" href="../../asignaturas/LM/LM.html">Lenguaje de Marcas</a></li>
+                        <li><a class="dropdown-item active" href="../../asignaturas/BBDD/BBDD.html">Bases de Datos</a></li>
+                        <li><a class="dropdown-item" href="../../asignaturas/NUBE/NUBE.html">Computacion en la Nube</a></li>
+                        <li><a class="dropdown-item" href="../../asignaturas/PAR/PAR.html">Planificacion de Redes</a></li>
+                        <li><a class="dropdown-item" href="../../asignaturas/IPE/IPE.html">IPE1</a></li>
+                        <li><a class="dropdown-item" href="../../asignaturas/HARDWARE/FH.html">Fundamentos de hardware</a></li>
+                        <li><a class="dropdown-item" href="../../asignaturas/ISO/ISO.html">Implantacion de sistemas operativos</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="apuntesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Apuntes</a>
+                    <ul class="dropdown-menu" aria-labelledby="apuntesDropdown">
+                        <li><a class="dropdown-item" href="#">PDF</a></li>
+                        <li><a class="dropdown-item" href="#">Podcast</a></li>
+                        <li><a class="dropdown-item" href="#">Videos</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Contenido principal -->
+    <main class="container mt-4"> 
+        <h1 class="mb-4 display-5 text-center page-title">Proyecto de Base de Datos</h1>
+        
+        <div class="row">
+            <!-- Bloque central -->
+            <section id="central-block" class="col-lg-8 mb-4">
+                
+                <div class="mb-5"> 
+                    <h2 class="h3 mb-3 text-center">Presentación del Proyecto (Vídeo)</h2>
+                    <div class="video-container">
+                        <video controls width="100%">
+                            <!-- RUTA RELATIVA AL HTML ACTUAL (proyectos/proyecto-bbdd.html) -->
+                            <source src="documentacion/VideoProyecto.mp4" type="video/mp4">
+                            Tu navegador no soporta la etiqueta de vídeo.
+                        </video>
+                    </div>
+                    <p class="mt-2 text-center text-muted">Descripción breve del vídeo o del proyecto.</p>
+                </div>
+
+                <hr class="my-5"> 
+
+                <div>
+                    <h2 class="h3 mb-3 text-center">Documentación del Proyecto (PDF)</h2>
+                    <div class="pdf-viewer-container">
+                         <!-- RUTA RELATIVA AL HTML ACTUAL (proyectos/proyecto-bbdd.html) -->
+                        <iframe src="documentacion/MemoriaProyecto.pdf" title="Documentación del Proyecto PDF"></iframe>
+                    </div>
+                </div>
+            </section>
+    
+            <!-- Columna derecha: Widgets -->
+            <aside class="col-lg-4">
+                <section class="widget card mb-3">
+                    <div class="card-header"><h3 class="h5 mb-0">Pomodoro</h3></div>
+                    <div class="card-body"> <iframe src="https://studywithme.io/aesthetic-pomodoro-timer/" width="100%" height="400" class="w-100" title="Pomodoro Timer"></iframe></div>
+                </section>
+                <section class="widget card mb-3">
+                    <div class="card-header"><h3 class="h5 mb-0">Calendario</h3></div>
+                    <div class="card-body"><iframe src="https://calendar.google.com/calendar/embed?src=es.spain%23holiday%40group.v.calendar.google.com&ctz=Europe%2FMadrid" style="border: 0" width="100%" height="200" class="w-100" title="Calendario"></iframe></div>
+                </section>
+                <section class="widget card mb-3">
+                    <div class="card-header"><h3 class="h5 mb-0">Spotify</h3></div>
+                    <div class="card-body"><iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DXcBWIGoYBM5M" width="100%" height="80" class="w-100" title="Spotify"></iframe></div>
+                </section>
+            </aside>
+        </div>
+    </main>
+
+    <!-- Pie de página  -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <section id="contacto-footer" class="mb-3"> <h2 class="h4">Contacto</h2> <p>Envíame un mensaje o sigue mis redes sociales.</p><ul class="list-inline"><li class="list-inline-item"><a href="#" class="text-white">Instagram</a></li><li class="list-inline-item"><a href="#" class="text-white">Twitter</a></li><li class="list-inline-item"><a href="#" class="text-white">LinkedIn</a></li></ul> </section>
+            <p class="mb-0">© 2024-2025 Rhopository. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
