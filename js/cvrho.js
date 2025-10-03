@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
             navTitle: "Curriculum Vitae",
             langBtnText: "English",
             name: "Rhommel Cardona",
-            profession: "Técnico Superior en Administración de Sistemas en Red - Asistencia en Carretera",
+            profession: "Conductor-Técnico Superior en Administración de Sistemas en Red",
             educationTitle: "Educación",
             edu1Title: "Ciclo FP Superior ASIR , IES Palomeras-Vallecas (2024-2026)",
             edu1Details: [
@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
             navTitle: "Resume",
             langBtnText: "Español",
             name: "Rhommel Cardona", // Proper names are not usually translated
-            profession: "Senior Technician in Network Systems Administration - Roadside Assistance",
+            profession: "Driver-Senior Technician in Network Systems Administration",
             educationTitle: "Education",
             edu1Title: "Higher VET Cycle in Network Systems Administration, IES Palomeras-Vallecas (2024-2026)",
             edu1Details: [
